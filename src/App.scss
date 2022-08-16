@@ -1,0 +1,154 @@
+.bg-image{
+  background: url(../public/conferm.jpg);
+background-position:30% 35%;
+height: 60vh;
+border-bottom-right-radius: 160% 120%;
+background-size: cover;
+}
+.team{
+  background:url(../public/darkbg.png)center center/cover no-repeat;
+  box-shadow: 0 0 10px 5px;
+  ;& h4, p{ 
+     color:white !important;
+   
+     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+     
+  }
+}
+.Team .T-title,
+.team-position {
+  font-size: 1rem !important;
+  text-align: center !important;
+  color:#FFFFFF;
+  ;
+
+  &:not(p) {
+    position: relative;
+    top: 8%
+  }
+}
+ 
+.searchIcon{
+   transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   visibility: hidden;
+  }
+  .btn-link:hover .searchIcon{
+    visibility: visible;
+  }
+
+.ov{z-index: 1 !important;}
+.cab{z-index: 5 !important;}
+.sp{z-index:10;}
+.c-text{z-index:10}
+
+.searches{
+  min-width: 18rem;
+  border-bottom: 2px solid rgb(222, 219, 219);
+  border-left: none;
+  border-top: none;
+  border-left: none;
+  outline: none !important;
+  z-index: 50;
+}
+.butin{
+  border: none;
+  outline: none !important;
+  z-index: 50;
+}
+.butin:hover{
+  box-shadow: none;
+  background-color: transparent;
+}
+.contains {
+  background-color: #0e8dbc;
+  padding: 2rem;
+  z-index: 20;
+  color: #FFFFFF;
+  box-shadow: 0 1px 0 #CCCCCC, 0 1px 0 #c9c9c9,
+   0 1px 1px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2),
+   0 0px 0px rgba(0, 0, 0, .15);
+
+}
+.list{
+  font-size: 1.2rem;
+}
+.butin:hover .list{
+box-shadow: #CCCCCC;
+color: black;
+}
+.searches:focus{
+  outline: none !important;
+  color:rgb(9, 10, 10);
+  font-size: 1.3rem; 
+}
+.offheader {
+  background: #0e8dbc;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.video-container {
+  height: 100px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.video-container video {
+min-width: 100%;
+min-height: 100%;
+position: absolute;
+object-fit: cover;
+z-index: 0;
+
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
+@media only screen and (max-width: 992px) {
+  #section-1 {
+    transform: translateY(-5%) !important;
+  }
+  .section-2-box {
+    margin-top: 4rem !important;
+  }
+}
+  .footers{
+    background: url(../public/backimage1.jpg)center center/cover no-repeat;
+  }
+.cover-footer{
+  background: rgba(78, 58, 195, 0.5);
+   margin-top: 0% !important;
+}
+.media{
+  position:relative
+;& .socials{
+border: 1px solid lightgray;
+ padding: 1rem;
+ margin-top: 2rem;
+ ;& a{
+  margin-left: 1%;
+  padding-left: 2rem;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  ;& i{
+    color: #fdfcff;
+    margin-right: 3%;
+    position: relative;
+    right:1rem;
+    
+  }
+ }
+}
+;& h3{
+  margin-top: 2rem;
+}
+}
