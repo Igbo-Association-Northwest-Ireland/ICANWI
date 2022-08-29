@@ -6,12 +6,12 @@ import styled from 'styled-components';
 const AboutUs = () => {
   return (
 
-    <div className="section-2-container position-relative mt-5">
-    <div className="container">
+    <div className="section-2-container  mt-5 About relative">
+    <div className="container relative">
     
-        <div className="row">
-          <div className="col-sm-12 col-lg-8 " style={{maxWidth:'60%'}}>
-                <h3 color='#1e154e'>About Us</h3>
+        <div className="row  about-us relative">
+          <div className="col-sm-12 col-md-12 left-aside col-lg-8  " style={{maxWidth:'55%'}}>
+                <h3 className='title'>About Us</h3>
                 <p className="medium-paragraph">
                 Igbo cultural Association Northwest Ireland is a cultural organised group founded in 2010 with the shared goal of promoting equality, diversity, peace and unity through cultural integration, community engagement,  participation and volunteering
                 </p>
@@ -21,19 +21,19 @@ const AboutUs = () => {
         <div className="buttons wow px-0" style={{maxWidth:'260px'}}>			
         
         <a className="reg-btn btn w-auto d-flex " style={{background:'lightgray'}}>
-         <span>Register to join the group</span> <span className='mx-3'><BsFillPencilFill/></span>
+         <span className='reg-button'>Register to join the group</span> <span className='mx-3'><BsFillPencilFill/></span>
         </a>
       </div>
      </div>
 
-          <div className="col-sm-12 col-lg-4 section-2-box text" style={{width:'40%'}}>
+          <div className="col-sm-12 col-md-12 right-aside col-lg-4 section-2-box text " style={{width:'45%'}}>
             <div className="text ">
-              <h5 className="mt d-flex" style={{color:'#1e154e'}}><BsFillHandThumbsUpFill color='red' /><span className='mx-2'>
-                Igbo Enviable Cultural Values</span></h5>
+              <h5 className="mt d-flex" style={{color:'#1e154e'}}><BsFillHandThumbsUpFill color='red' /><span className='mx-2 envous-culture'>
+                Igbos Enviable Cultural Values</span></h5>
               <div className="mt-4 culture-envi p-3" style={{ color: 'rgb(248, 245, 245)', background: '#1e154e', width:'100%' }}>
 
                 <li className="mt-n1 text-light">Special care to visitors</li>
-                <li className="mt-n1">Community raise Children not only the parents</li>
+                <li className="mt-n1">Children up-bringing - not for parents only</li>
                 <li className="mt-n1">Respect to elders</li>
                 <li className="mt-n1">Mandatory care for old people</li>
                 <li className="mt-n1">Compulsory support to new born and mother </li>
@@ -43,7 +43,7 @@ const AboutUs = () => {
           </div> 
           </div>
         </div>
-        <hr className="" style={{ marginTop: '1rem', marginBottom: '1rem',  borderTop: '1px solid rgba(0, 0, 0, 0.9)'}}/>
+        <hr className="" style={{ marginTop: '1rem', marginBottom: '1rem',  borderTop: '1px solid rgba(0, 0, 0, 0.6)'}}/>
 
     </div>
     

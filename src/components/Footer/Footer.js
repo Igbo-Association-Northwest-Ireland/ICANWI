@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <>
 <FOOTER className="section-6-container pt-12 pb-8 footers
- section-container section-container-image-bg mt-12" 
+ section-container section-container-image-bg mt-12  " 
  id="section-6">
     <div className="container">
         <div className="row">
@@ -36,134 +36,52 @@ const Footer = () => {
             </div>
         </div>
         <div className="row">
-            <div className="col-md-6 section-6-box wow ">
-                <h3 color='#1e154e'>By eMail</h3>
-                <div className="section-6-form">
-                    <form role="form" className='mb-3'>
-                        <div className="form-group my-1">
-                            <label className="sr-only my-3" for="contact-email">Email</label>
-                            <input type="text" name="email" placeholder="Email..." className="contact-email form-control" id="contact-email" />
-                        </div>
-                        <div className="form-group my-1">
-                            <label className="sr-only my-3" for="contact-subject">Subject</label>
-                            <input type="text" name="subject" placeholder="Subject..." className="contact-subject form-control" id="contact-subject" />
-                        </div>
-                        <div className="form-group my-1">
-                            <label className="sr-only " for="contact-message">Message</label>
-                            <textarea name="message" placeholder="Message..." className="contact-message form-control" id="contact-message"></textarea>
-                        </div>
-                        <button type="submit" 
-                        className="btn-outline btn-customised mt-2 px-3 py-1" 
-                        style={{ border: '2px solid #1e154e',
-                        borderRadius:'10px',
-                        color:'#1e154e', fontWeight:'600'
-                        }}><i className="fas fa-paper-plane"></i> Send Message</button>
-                    </form>
-                </div>
+    <div className="col-md-6 section-6-box wow ">
+        <h3 className='send-email' color='#1e154e'>By eMail</h3>
+        <div className="section-6-form">
+            <form role="form" className='mb-3'>
+            <div className="form-group my-1">
+                <label className="sr-only my-3" for="contact-email">Email</label>
+                <input type="text" name="email" placeholder="Email..." className="contact-email form-control" id="contact-email" />
+            </div>
+            <div className="form-group my-1">
+                <label className="sr-only my-3" for="contact-subject">Subject</label>
+                <input type="text" name="subject" placeholder="Subject..." className="contact-subject form-control" id="contact-subject" />
+            </div>
+            <div className="form-group my-1">
+                <label className="sr-only " for="contact-message">Message</label>
+                <textarea name="message" placeholder="Message..." className="contact-message form-control" id="contact-message"></textarea>
+            </div>
+            <button type="submit" 
+            className="btn-outline btn-customised mt-2 px-3 py-1 send-message" 
+            style={{ border: '2px solid #1e154e',
+            borderRadius:'10px',
+            color:'#1e154e', fontWeight:'600'
+            }}><i className="bi bi-paper-plane"></i> Send Message</button>
+        </form>
+    </div>
             </div>
             <div className="col-md-5 offset-md-1 section-6-box wow media">
                 <h3 color='#1e154e'>Follow us</h3>
                 <div className="section-6-social">
-		                    	<div class="section-6-social socials">
-			                    	<a href="#"><i class="bi bi-facebook"></i></a>
-									<a href="#"><i class="bi bi-twitter"></i></a>
-									<a href="#"><i class="bi bi-instagram"></i></a>
-									<a href="#"><i class="bi bi-whatsapp"></i></a>
-									<a href="#"><i class="bi bi-youtube"></i></a>
-		                    	</div>
-                             </div>
-                           </div>
-                          </div>
-                          </div>
-                    </FOOTER>
-
-       {/*      <hr className=" "
-             style={{ marginTop: '5rem',
-              marginBottom: '1rem', 
-              borderTop: '1px solid rgba(0, 0, 0, 0.9)' }} 
-              />
-
- */}
-{/* <MEDIA className=' text-center text-white relative'>
-<div className="col-md-5 offset-md-1 section-6-box wow  absolute left-46">
-                <h3 style={{color:'#1e154e', marginLeft:'30%'}}>Follow us</h3>
-                <div className="section-6-social">
-                   
+                <div class="section-6-social socials">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                   </div>
+                 </div>
                 </div>
+              </div>
             </div>
-<Container className='p-4 pb-0 '>
-    <section className='mb-0 relative top-8'>
-        <Button floating className='m-1' href='#!' role='button'
-         style={{background:'rgb(59, 89, 152)',
-         border:'1px solid white'
-         }}>
-            <FaFacebook /></Button>
-            
-       <Button style=
-       {{background:"#1da1f2",
-        border:'1px solid white'
-       }} floating className='m-1' href='#!' role='button'>
-            <FaTwitterSquare/></Button>
-             
-        <Button style={{background:'#4285f4',
-        border:'1px solid white'
-    }} floating className='m-1' href='#!' role='button'>
-            <FaGooglePlusSquare />
-            </Button>
+         </FOOTER>
 
-        <Button style={{background:' #c32aa3',
-        border:'1px solid white'
-    }} floating className='m-1' href='#!' role='button'>
-        <FaInstagramSquare/>
-        </Button>
-        <Button style={{background:"#0a66c2",
-        border:'1px solid white'
-    }} floating className='m-1' href='#!' role='button'>
-            <FaLinkedin/>
-            </Button>
-        <Button style={{background:"RGB: 10, 102, 194",
-        border:'1px solid white'
-    }} floating className='m-1' href='#!' role='button'>
-            <FaGithub/></Button>
-        <Button style={{background:"#ff0000",
-        border:'1px solid white'
-    }}floating className='m-1' href='#!' role='button'>
-            <BsYoutube/></Button>
-        <Button style={{background:"#25d366",
-        border:'1px solid white'
-    }}floating className='m-1' href='#!' role='button'>
-            <FaWhatsappSquare/>
-        </Button> 
-    </section>
-</Container>
-</MEDIA>
- */}
-
-
+       
 <div className='text-center relative cover-footer'
  style={{ backgroundColor: '#ivory', color: '#1e154e' }}>
-   <div bgColor='light' className='text-center text-lg-left'>
-    {/* <Container className='p-4 pb-0'>
-        <form action='' color='red'>
-            <ROWS className='relative pb-5'>
-                <Col size='auto' className='mb-4 mb-md-0'>
-                    <p className='pt-2'>
-                        <strong>Sign up for our newsletter | Minutes</strong>
-                    </p>
-                </Col>
-
-                <Col md='5' size='12' className='mb-4 mb-md-0 '>
-                    <FORMCONTROL type='text' id='form5Example2' label='Email address' />
-                </Col>
-
-                    <Col size='auto' className='mb-4 mb-md-0'>
-                    <Button style={{ background: '#1e154e', color: 'white' }}
-                     className=' buttons relative right-28'>Sign up</Button>
-                </Col>
-             </ROWS>
-              </form>
-             </Container>
- */}
+   <div className='text-center text-lg-left bg-light'>
+    
           {/*    <hr className=" "
              style={{ marginTop: '5rem',
               marginBottom: '1rem', 
@@ -195,8 +113,18 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
 }
 `
 const FOOTER = styled.div`
-/*   background: rgba(78, 58, 195, 0.5);
- */h3{
+.send-email{padding:1rem 0}
+.send-message{background:#FF7E00!important;
+border:none !important; 
+color:whitesmoke !important;
+border-radius:5px !important;
+padding: 2% 3% !important}
+margin-top:0!important;
+
+@media(max-width:786px){
+    padding:1.2rem 2rem !important;
+}
+h3{
  color: #1e154e;
 }
 `
@@ -206,7 +134,11 @@ const MEDIA = styled.div`
   min-width:300px;
   padding: 3rem ;
 .m-1{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+     rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
    
 `

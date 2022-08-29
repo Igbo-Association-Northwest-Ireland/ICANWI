@@ -1,63 +1,80 @@
 import React from 'react'
 import styled from 'styled-components';
+import video1 from '../video/masq-vid.mp4'
+import video2 from '../video/kidsdance.mp4'
+import video3 from '../video/ladyvid.mp4'
+import {FaQuoteLeft, FaQuoteRight, FaRegCalendarCheck} from 'react-icons/fa'
+import {GoTriangleRight} from 'react-icons/go'
 
 const Videos = () => {
   return (
-
-    <VIDEO className="section-5-container section-container" id="section-5">
+    <VIDEO className="section-5-container section-container mt-10" id="section-5">
     <div className="container">
-        <div className="row">
+        <QUOTE className="row">
             <div className="col section-5 section-description wow fadeIn my-4">
-                <h2>Amazing Videos</h2>
+                <h3 className='mt-1'>Groups | mission and Models</h3>
                 <div className="divider-1 wow fadeInUp"><span></span></div>
-                <p>In our honour we have chosen to socialize in this way: Dancing, communion, wining and dinning</p>
+                <span className='d-flex pt-2 pb-1'>
+
+                <FaQuoteLeft/>
+                <h5> Why our socializing model is based on entertainment</h5>
+                <FaQuoteRight/>
+                </span>
+                <h6>
+               Simply to promote a friendly community environment
+                </h6>
             </div>
-        </div>
-        <div className="row brand">
+        </QUOTE>
+        <div className="row brand mt-2">
             <div className="col-md-4 section-5-box wow fadeInUp">
                 <div className="section-5-box-image">
                     
-                    <video className="video-fluid z-depth-1 embed-responsive embed-responsive-16by9" autoplay loop controls muted>
-                    <source src="/video/AfricaDay1.mp4" type="video/mp4" allowfullscreen/>
+                    <video className="video-fluid z-depth-1 embed-responsive embed-responsive-16by9" autoPlay loop controls muted>
+                    <source src={video1} type="video/mp4" allowfullscreen/>
                   </video>
                 
                 </div>
-                <h3><a href="#" color='#1e154e'>Acme branding</a> <i className="fas fa-angle-right"></i></h3>
-                <div className="section-5-box-date"><i className="far fa-calendar"></i> June 2019</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <h5 className='mt-2 d-flex'><span href="#" color='#1e154e'>Culture and oneself</span><GoTriangleRight className='mt-1'/></h5>
+                <div className="section-5-box-date d-flex "> June 2017 <FaRegCalendarCheck className='mt-1 mx-1'/></div>
+                <p>A man without culture is like a tree without root. Igbos are naturally endoured with diverse culture and tradition most which were created for administration of justice</p>
             </div>
             <div className="col-md-4 section-5-box wow fadeInDown">
                 <div className="section-5-box-image">
                     
                     <video className="video-fluid z-depth-1 embed-responsive 
-                    embed-responsive-16by9" autoplay loop controls muted>
-                        <source src="/video/childreDance.mp4" type="video/mp4" 
+                    embed-responsive-16by9" autoPlay loop controls muted>
+                        <source src={video2} type="video/mp4" 
                     allowfullscreen/>
                 </video>
                 
                 </div>
-                <h3><a href="#" color='#1e154e'>Created 150 flyers</a> <i className="fas fa-angle-right"></i></h3>
-                <div className="section-5-box-date"><i className="far fa-calendar"></i> February 2019</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <h5 className='mt-2 d-flex'><span href="#" color='#1e154e'>Created Memory</span><GoTriangleRight className='mt-1'/></h5>
+                <div className="section-5-box-date d-flex "><i className="far fa-calendar"></i> December 2019 <FaRegCalendarCheck className='mt-1 mx-1'/></div>
+                <p>To empower children to explore their potentials is the ultimate gift crucial to their development</p>
             </div>
             <div className="col-md-4 section-5-box wow fadeInUp">
                 <div className="section-5-box-image">
 
                     <video className="video-fluid z-depth-1 embed-responsive 
-                    embed-responsive-16by9" autoplay loop controls muted>
-                        <source src="/video/ladiesDance.mp4" type="video/mp4" 
+                    embed-responsive-16by9" autoPlay loop controls muted>
+                        <source src={video3} type="video/mp4" 
                     allowfullscreen/>
                 </video>
 
                 </div>
-                <h3 color='#1e154e'><a href="#" color='#1e154e'>WordPress design</a> <i className="fas fa-angle-right"></i></h3>
-                <div className="section-5-box-date"><i className="far fa-calendar"></i> November 2018</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <h5 className='mt-1 d-flex'color='#1e154e'><span href="#" color='#1e154e'>End of the Year Party</span><GoTriangleRight className='mt-1'/></h5>
+                <div className="section-5-box-date d-flex">
+                <i className="far fa-calendar">
+                </i> December 2019 <FaRegCalendarCheck className='mt-1 mx-1'/></div>
+                <p>
+                The world is not fairly divided and life itself dishing out depression and disappiontment at a will. chosen to viewed the world in the manner that perpetuates joy rather than agony is our goal.
+                </p>
             </div>
         </div>
         <div className="row">
             <div className="col section-bottom-button wow fadeInUp">
-                <a className="btn btn btn-customised btn-outline px-3 py-1 " href="#" role="button" 
+                <a className="btn btn btn-customised btn-outline px-3 py-1 " 
+                href="#" role="button" 
                 style={{border: '2px solid #1e154e',
                 borderRadius:'10px', fontWeight:'700',
                 color:'#1e154e' }}>
@@ -72,11 +89,13 @@ const Videos = () => {
 
 export default Videos
 const VIDEO =  styled.div`
-h3>a{
+
+`
+const QUOTE = styled.div`
+position:relative;
+   
+h3{
     color:#1e154e !important;
 text-decoration:none;
 }
-
-
-
 `

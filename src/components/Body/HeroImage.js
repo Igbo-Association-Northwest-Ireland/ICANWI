@@ -1,147 +1,168 @@
 import React from 'react'
 import styled from 'styled-components'
 import blacklife from '../image/blacklife.jpg'
+import Drops from '../Header/DropdownContainer/Drops'
+import ogene from '../image/ogene.png'
+import logo from '../image/logorm.png'
+import group1 from '../image/group-photorm1.png'
+import group2 from '../image/group-photorm2.png'
+import ladies from '../image/ladiesGrm.png'
+import kids from '../image/3kidrm.png'
+import men from '../image/menG.png'
+
 
 const HeroImage = () => {
   return (
   
-    <OVER className="bg-image"
+    <HEROIMAGE className="hero-image-cover"
      >
-  <div className="mask position-relative">
-    <div className="d-flex justify-content-left overlay align-items-center h-100 position-relative">
+  
 
-      
-<div className= "card cd  position-absolute" style={{width: "26rem"}}>
-  <div className="card-body cab relative">
+<div className= "card main-card position-absolute" style={{width: "26rem"}}>
+  <div className="card-body hero-card-body relative">
     <h6 className="card-title text-white mb-0 text-4xl c-h6">  
-      <span className='sp'>Igbo Cultural Association North-west Ireland</span>
+      <span className='card-title-span'><span className='welcome-title'>Welcome <span className='To'>to</span></span> <br/>Igbo Cultural Association North-west Ireland</span>
     </h6>
-    <p className="card-text c-text">
+    <p className="card-text card-texts">
       Founded in 2010 with the shared goal of 
       promoting peace and unity through cultural integration,
       participating and volunteering
     </p>
-    <a href="#" className="btn button" 
-    style={{ background:'#1e154e', color:'white'}}>
+    <a href="#" className="btn rounded-lg btn-customised button" 
+    >
       Read More
       </a>
   </div>
-  <div className="overlays   position-absolute ov" ></div>
+  <div className="overlays position-absolute" ></div>
 </div>
-     
-    </div>
-  </div>
-    </OVER>
+
+{/* DROPDOWN LINK/IMAGES CONTENTS*/}
+
+  <div className=" position-relative ">
+{/*     { <Drops style={{zIndex:'100'}} className='ml-5'/>}
+ */}      
+ </div>
+   <div className=' hero-image-inner-item relative top-5'>
+      <div className='item d-flex relative'>
+      <img className='max-w-48 max-h-48 mt-20 ogene'
+        alt="Image" href="#home"
+        src={men}
+    />
+      </div>
+      <div className='item d-flex relative'>
+
+      <img className='max-w-42 absolute max-h-36 rounded-circle logo '
+        alt="Image" href="#home"
+        src={logo}
+    />
+      </div>
+</div>
+
+    </HEROIMAGE>
    
   )
 }
 
 export default HeroImage
-const OVER = styled.div`
+const HEROIMAGE = styled.div`
 position:relative;
-.mask{
-    background-color: rgba(0, 0, 0, 0.2);
-    .overlay{
-        padding:10.5rem;
-        position:relative;
-        .card{
-          background:transparent !important;
-          border-radius: 45px/15px;        
-          left:5%;
-          top:27%;
-          font-family: verdana;
- 
-          .card-title{
-           color:azure !important;
-           font-size:1.5rem;
-           font-weight:900;
-           font-family: verdana;
-           line-height:2.5rem;
-           z-index:25;
-           text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
-          }
-         .card-text{
-          text-align:center;
-          font-size: 15px;
-          font-weight:700;
-          color:#f7a400;
-          letter-spacing:1px;
-          text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
-          font-family: 'Josefin Sans', sans-serif;
 
-
-        }
-        .button{
-          z-index:25 !important;
-        }
-        .overlays{
-          width:100%;
-          height:100%;
-          left:0;
-          right:0;
-          top:0;
-          bottom:0;
-          background:#1e154e;
-          opacity:0.2;
-  
-   
-        }
-    }
+.main-card{
+  background:transparent !important;
+  left:2rem;
+  top:5rem !important;
+  font-family: verdana;
+  z-index: 10;
+  border:none;
+  .card-body{z-index: 5 !important
   }
-}
-`
-/* const IMGOUTER = styled.div`
-min-width:100%;
-max-height:400px;
-min-height:500px;
-background-color:#1e154e;
-overflow:hidden;
-display:flex;
-justify-content:center;
-align-items:center;
-background: linear-gradient(0deg, rgba(255 255 255 / 54%), rgba(252 0 150 / 69%)), url('/conferm.jpg');
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position:30% 35%;
-    border-bottom-right-radius: 160% 120%;
-    border-top-left-radius: 150% 5%;
-    border-bottom-left-radius: 25% 10%;
 
-img{
-    min-width:100%;
-    min-height:100%;
-    border-bottom-right-radius: 100% 75%;
-  
+  .card-title{
+    color:azure !important;
+    font-size:1.5rem;
+    font-weight:900;
+    font-family: verdana;
+    line-height:2.5rem;
+    z-index:25;
+  }
+  .card-texts{
+  padding-top:1rem;
+  text-align:left;
+  font-size: 1rem;
+  font-weight:700;
+  color:#f7a400;
+  letter-spacing:1px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+  font-family: 'Josefin Sans', sans-serif;
+
+ }
+.button{
+  z-index:25 !important;
+  border:2px solid white;
+  padding:12px 18px;
+  color:aliceblue !important;
+  background:transparent;
+ }
+.overlays{
+  width:100%;
+  height:100%;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background:black;
+  opacity:0.1;
+  z-index:-1;
+  border-radius: 10% 30% 50% 70% !important;
+  border:none;
+ }
+@media(max-width:1200px){
+margin:0 !important;
+padding:0 !important;
+.button{
+padding:6px !important;
 }
-.overlay{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:100%;
-    top:0;
-    width:100%;
-    height:100%;
-    background: linear-gradient(0deg, rgba(255 255 255 / 54%), rgba(255 0 150 / 69%));
-    display:table;
 }
+
+@media(max-width:992px){
+.button{
+padding:5px !important;
+}
+.card-texts{
+text-shadow: 2px 2px 0 #201e1e, 4px 4px 0 #252424;
+color:chartreuse !important;
+text-align: left !important;
+}
+  }
+   @media(max-width:786px){
+    margin-left:-2rem!important;
+    .button{
+    padding:5px !important;
+    background:#4d1b50;
+  }
+  left:10% !important;
+  }
+  @media only screen and 
+  (max-width: 600px) and 
+  (min-width: 320px)  {
+   left:1.8% !important;
+   min-width:100%;
+   padding:1rem 2rem !important;
+
+ .card-texts{
+  padding-right:1.1rem 
+  !important;
+  }
+   }
+  }
 `
+
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'PT Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
  
-/* background: #6a85b6;
 
-  /* Chrome 10-25, Safari 5.1-6 
-  background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 0.5), rgba(186, 200, 224, 0.5));
 
-   W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-  background: linear-gradient(to top, rgba(106, 133, 182, 0.5), rgba(186, 200, 224, 0.5)) 
-  
-  backdrop-filter: contrast(140%) brightness(100%) saturate(100%) sepia(50%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
-    mix-blend-mode: lighten;
-    background: rgba(161, 44, 199, 0.31);
-    opacity: 1;
-  
-  */
+ 

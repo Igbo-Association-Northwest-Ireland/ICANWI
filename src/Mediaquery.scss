@@ -1,0 +1,134 @@
+/* header and heroimage media query styling here
+ */
+ 
+    
+    @media only screen and (max-width:992px) and (min-width:800px){
+   .hero-image-inner-item img{
+    margin-top:8rem;
+    margin-left:-5rem !important;
+    }
+    .hero-image-inner-item>.item>.ogene{
+    transform: scale(1.5) !important;
+    z-index:2 !important;
+    position:absolute;
+    left:0 !important;
+    top:3rem !important;
+
+    }
+    .hero-image-inner-item>.item>.logo{
+    left:3rem !important;
+    top:2rem;
+    transform:scale(1.8) !important;
+    background:black;
+    z-index:-1 !important;
+    max-height:14rem !important;
+    max-width:14rem !important;
+        
+        }
+
+
+
+    }
+    @media only screen and (max-width:800px) and (min-width:600px){
+    .hero-image-inner-item>.item> img{
+     margin-top:10rem;
+     margin-left:-4rem;
+    }
+    .hero-image-inner-item>.item>.ogene{
+    transform: scale(1.5) !important;
+    z-index:2 !important;
+    position:absolute;
+    left:5% !important;
+    top:3rem !important;
+
+    }
+    .hero-image-inner-item>.item>.logo{
+    left:3rem !important;
+    top:2rem;
+    transform:scale(1.5) !important;
+    background:black;
+    z-index:-1 !important;
+    max-height:14rem !important;
+    max-width:14rem !important;
+    
+    }
+    .main-card>.hero-card-body p{
+      max-width: 300px !important;
+    }
+   }  
+  
+   @media only screen and (max-width:600px) and (min-width:320px){
+    .hero-image-inner-item>.item> img{
+     margin-top:12rem;
+     margin-left:-8rem;
+
+    }
+    .hero-image-inner-item>.item>.ogene{
+    transform: scale(4.5) !important;
+    z-index:2 !important;
+    position:absolute;
+    left:0 !important;
+    top:3rem !important;
+
+    }
+    .hero-image-inner-item>.item>.logo{
+    left:0 !important;
+    top:2rem;
+    transform:scale(1) !important;
+    background:black;
+    z-index:-1 !important;
+    max-height:14rem !important;
+    max-width:14rem !important;
+    
+    }
+    
+   }  
+  
+
+
+
+
+
+
+
+/*About us media query  starts here*/
+.left-aside{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    padding-right:5%;
+    padding-bottom:3%;
+}
+.right-aside{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+@media(max-width:960px){
+.about-us{
+
+display:flex;
+flex-direction: column;
+padding: 0 2rem;
+;& .right-aside, .left-aside{
+min-width:100% !important;
+max-width: 100% !important;
+}
+;& .title{
+    color: #1e154e;
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.reg-btn{
+    background: rgb(125, 118, 92) !important;
+    color: white;    
+    font-weight: 400;
+}
+.envous-culture{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1e154e;
+    font-weight: 600;
+}
+}
+
+}/*What we Do  media query  starts here*/
+.jumbo1{background:#fafafb;
+
+}

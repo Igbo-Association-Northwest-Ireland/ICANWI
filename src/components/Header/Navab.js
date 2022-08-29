@@ -5,62 +5,76 @@ import logo2 from '../image/logorm.png'
 import light from '../image/lightingbg.jpg'
 import dark from '../image/darkbg.png'
 import Avatar from 'react-avatar';
-import DropdownMenu from './DropdownMenu';
 import { FaAngleDown, FaChevronDown, FaHome } from "react-icons/fa";
+import {BsChevronCompactDown} from 'react-icons/bs'
 import { Navbar, Container, Row, Col, Nav } from 'react-bootstrap'
-import './Header.css'
 import styled from 'styled-components'
+import {BsJustify} from 'react-icons/bs'
+
+
+
 const navs = Navbar.Collapse;
 let logs;
+const Navab = (props) => {
+const Drops = props.Drops
+return (
+<NAVBARS  variant='light' expand='lg' style={{ minWidth: '100vw' }}>
+<CONTAINER fluid className=' overflow-hidden py-2' style={{ paddingLeft: '5rem', paddingRight: '3rem' }}>
 
-const Navab = () => {
-    return (
-        <NAVBARS bg="dark" variant="dark" expand='lg' style={{ minWidth: '100vw' }}>
-            <CONTAINER fluid className=' overflow-hidden py-2' style={{ paddingLeft: '5rem', paddingRight: '3rem' }}>
+{/* NAVBAR BRAND SECTION STARTS HERE.......
+*/}
 
-                {/*             NAVBAR BRAND SECTION STARTS HERE
- */}
+<BRAND href="#home" className='rounded-circle position-relative brand' >
+    {<img
+        alt="Image" href="#home"
+        src={logo2}
+    />
+    }
+</BRAND>
 
-                <BRAND href="#home" className='rounded-circle position-relative' >
-                    {<img
-                        alt="Image" href="#home"
-                        src={logo2}
-                    />
-                    }
-                </BRAND>
+{/* NAVBAR BRAND SECTION STOPS HERE....... 
 
-                {/* NAVBAR BRAND SECTION STOPS HERE      AND         TOOGLE COMPONENTS SECTION STARTS
- */}
-                <Navbar.Toggle />
-                <Navbar.Collapse className="colap">
+TOOGLE COMPONENTS SECTION STARTS HERE.......
 
-                    <Nav className="me-auto">
-                        <SPAN className=' spancover'>
-                            <a href="#home2" className='navbar-brand'><FaHome className=' spc home ' /></a>
-                            <span className='subspan position-relative right-8'>
-                                <span className=' spc spc2'>Explore the list of our activities</span>
-                                <span className='spc dropdown position-relative right-12 lg:right-8 '><DropdownMenu /></span>
-                            </span>
-                        </SPAN>
-                    </Nav>
-                    <LINK className='links position-relative'>
-                        <span>
-                            <span className='linkinfo info-sign me-2'>
-                            </span>
-                            <a href="#login" className='btn btn-sm text-light shadow-2xl link1 position-relative left-5'>Read | Meeting Minutes
-                            </a>
-                        </span>
+*/}
+     <TOGGLER aria-controls="basic-navbar-nav" style={{border:'none', outline:'none'}}><HAMBURGER style={{border:'none', outline:'none'}}/></TOGGLER> 
 
-                        <span className='position-relative'>
-                            <span className='linkinfo info-register me-2'>
-                            </span>
-                            <a href="#login" className='btn btn-sm  link2'>Click here to join us
-                            </a>
-                        </span>
-                    </LINK>
-                </Navbar.Collapse >
+{/* NAVBAR TOGGLE SECTION STOPS HERE AND .... 
 
-                {/*    TOOGLE COMPONENTS SECTION STOPS HERE
+......COLLAPSE COMPONENTS SECTION STARTS
+*/}
+
+    <COLLAPSE className="colap">
+    <Nav className="me-auto">
+{/*         activities dropdown button starts here
+ */}        <SPAN className=' spancover'>
+            <a href="#home2" className='navbar-brand'><FaHome className=' spc home ' /></a>
+            <span className='activities-list-holder position-relative '>
+                <span className=' activities-list'>Explore <span className='explore'>the list of </span> our activities</span>
+                <span className='dropdowns position-relative'>{<Drops/>}</span>
+            </span>
+        </SPAN>
+        {/* activities dropdown button stops here
+ */} 
+    </Nav>
+
+    {/* Menu links button starts here
+ */} 
+    <LINK className='links position-relative'>
+    <ul className="navbar-nav mr-auto me-5">
+      <li className="nav-item active text-light">
+        <a className="nav-link about-us-link" href="#">About us</a>
+      </li>
+      
+      <li className="nav-item">
+        <a className="nav-link  join-us-link" href="#">Join us</a>
+      </li>
+        </ul>
+   
+    </LINK>
+</COLLAPSE >
+
+{/*  TOOGLE COMPONENTS SECTION STOPS HERE
  */}
 
             </CONTAINER>
@@ -76,23 +90,34 @@ const NAVBARS = styled(Navbar)`
 /*   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
  */
 `
+const TOGGLER = styled(Navbar.Toggle)`
+
+ :focus{box-shadow: none  !important}
+
+`
+const HAMBURGER = styled(BsJustify)`
+color:white; font-size:2rem;
+
+`
 const BRAND = styled(Navbar.Brand)`
 padding-top: 3rem  !important;
  min-width:80px;                
  min-height:80px;
-    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+-webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
 img{
-    position: absolute;
-    left:0;
-    right:0;
-    bottom: 0;
-    top:0;
-    width:100%;
-    height:100%
-    
+position: absolute;
+left:0;
+right:0;
+bottom: 0;
+top:0;
+width:100%;
+height:100%;
 }
-
+@media(max-width:786px){
+position:relative;
+bottom:-5% !important;
+}
 `
 
 const SPAN = styled.span`
@@ -107,160 +132,172 @@ align-content: space-evenly;
 align-items: center;
 padding-left:3rem;
 margin-left:2rem;
-.subspan{
-  
+z-index: 200;
+.activities-list-holder{
+    z-index: 300;
     display: grid;
     grid-template-columns: repeat(2, 280px 120px);
-   
     }
   
 
-.spc{
-    display:block;
-    width: auto;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight:700;
-}
-.spc1{
-    color:white;
-    font-size:2rem
-}
-.dropdown{transform: perspective(500px) scale3d(1.3, 1.0, 0.2) translateZ(100px);
+.dropdown{transform: perspective(500px) scale3d(1.3, 1.0, 0.2) translateZ(100px) & X(-50%);
   transform-origin: left;
+ 
 
 }
 
 .home{
-    color:white;
-    margin-left:-70%; 
-    font-size:2rem;
-    
+color:white;
+margin-left:-70%; 
+font-size:2rem;
+
 }
-.spc2{margin-left:5%;
+.activities-list{margin-left:3%;
     color:white;
 }
 
-/* @media(max-width:1050px){
-    grid-template-columns: fit-content(15%) fit-content(1%) 1fr;
+/* 
+THE LIST AND INFO MEDIA QUERY START HERE
 } */
+
 @media(max-width:992px){
-    grid-template-columns: repeat(1, auto);
-    align-items: center;
-    font-family: 'PT Sans', sans-serif;
-    width:auto;
-    position:relative;
-    left:15%;
-   margin-top:-2rem;
-    height:auto;
-    overflow:hidden;
-    margin-left:15%;
-    padding:0;
+grid-template-columns: repeat(1, auto);
+align-items: center;
+font-family: 'PT Sans', sans-serif;
+width:auto;
+position:relative;
+left:15%;
+margin-top:-2rem;
+height:auto;
+overflow:hidden;
+margin-left:15%;
+padding:0;
+.activities-list
+{
+font-weight:700;
+font-size: 1.2rem;
+}
+ .explore{
+  display:none !important;
+  }
 
     .home{display:none
       };
-.dropdown{ margin-left:-5%;
+    .dropdown{ margin-left:-14%;
     margin-top:-5%;
 };
-    .subspan{
+    .activities-list-holder{
     padding-left:10% !important;
     align-items: center;
     padding-bottom:12% !important;
     min-width:100%;
     max-width:100%;
-    margin:0;
+    position:relative;
+    right:14%;
     font-size:1rem;
     }
 } 
 @media(max-width:760px){
-        margin:0;
-    .subspan{
-    padding:0;
-    }
-}
-`
-const LINK = styled.div`
-display:grid;
-    gap:10px;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-evenly;
-    align-items: center;
-    min-width:450px;
-    max-width:550px;
-    
-    .linkinfo{color:white !important; 
-     
-    }
-    .info-sign{position:absolute; left:-20%;
-    }
-   .link1{background:#f4a044;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     min-width: 180px !important;
-      padding:4% 2%; 
-      border-radius:15px;
-      font-weight:700;
-      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    }
-   .link2{background:#d8d0ff; color:#1e154e; 
-       min-width: 150px !important;
-       border-radius:15px;
-      padding:4% 2%; 
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight:700;
-      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-      
+     margin:0;
+     position: relative;
 
+    
 }
-     a{
-/* width:155px;
-border:1px solid #833ab4;
-border-radius:15px;
-border:1px solid transparent;
-background: url("images/picker_mask.png");
-	background: -moz-linear-gradient(bottom, #000 0%, rgba(0, 0, 0, 0) 100%),
-				-moz-linear-gradient(left, #FFF 0%, rgba(255, 255, 255, 0) 100%);
-	background: -webkit-linear-gradient(bottom, #000 0%, rgba(0, 0, 0, 0) 100%),
-				-webkit-linear-gradient(left, #FFF 0%, rgba(255, 255, 255, 0) 100%);
-	background: -ms-linear-gradient(bottom, #000 0%, rgba(0, 0, 0, 0) 100%),
-				-ms-linear-gradient(left, #FFF 0%, rgba(255, 255, 255, 0) 100%);
-	background: -o-linear-gradient(bottom, #000 0%, rgba(0, 0, 0, 0) 100%),
-				-o-linear-gradient(left, #FFF 0%, rgba(255, 255, 255, 0) 100%);
-	background-color: #F00;
-background-origin:border-box;
-background-clip:content-box, border-box;
+`   
+/* THE LINK MEDAI QUERY STARTS HERE
  */
 
-
-}
+const LINK = styled.div`
+   
+    .navbar-nav{
+    .nav-link{color:white !important; 
+        font-size:1.2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight:700;
+        position:relative;
+        display: inline-block; 
+        width:auto;
+       
+    :hover.nav-link::after{
+    width:80px;
+    cursor:pointer
+    }
+    }
+   .nav-link::after{
+    content: "";
+    position:absolute;
+    top:80%;
+    left:10%;
+    right:0;
+    bottom:0;
+    width:0px;
+    height:2px;
+    background:orange;
+    white-space: nowrap;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+   
+   }
+    
     @media(max-width:992px){
     grid-template-columns: repeat(1, auto);
-    margin-left:15%;
-    justify-content: center;
-    min-width:450px;
-    max-width:450px;
-    .link2{
-        margin-left:18%;
+    justify-items: center;
+    align-items:center;
+    min-width:250px;
+    max-width:250px;
+    gap:2%;
+    background: red;
+    .about-us-link{
+
     }
+    .join-us-link{
+    
+    }
+    
     }
     @media(max-width:760px){
-        .linkinfo{display:none};
-        grid-template-columns: repeat(2, auto);
-        margin:0
+       
+    }
     }
 
 `
+/* Container and div collapse media query starts here
+ */
 
+const COLLAPSE = styled(Navbar.Collapse)`
+position:relative;
+  @media(max-width:760px){
+       max-width:auto !important;
+       min-height:auto !important;
+       
 
+      
+
+   
+   
+    }
+`
 const CONTAINER = styled(Container)`
 box-sizing:border-box;
+z-index:100;
 background-color:#1e154e;
+
+-webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
 img{
     color:whitesmoke
 };
--webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
-@media(max-width:992px){
+
+@media(max-width:786px){
     padding-bottom:3% !important;
 }
+@media(max-width:992px){
+    padding-bottom:5% !important;
+    padding-right:15% !important;
+}
+
 `
 
 
