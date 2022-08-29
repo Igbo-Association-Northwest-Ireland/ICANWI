@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ICANWI/static/css/main.93362ca1.css",
+    "main.js": "/ICANWI/static/js/main.cdb66539.js",
+    "static/media/bg-video.mp4": "/ICANWI/static/media/bg-video.7625476ee9f620bf5c06.mp4",
+    "static/media/kidsdance.mp4": "/ICANWI/static/media/kidsdance.5ba5d25ff72bed21d0b6.mp4",
+    "static/media/masq-vid.mp4": "/ICANWI/static/media/masq-vid.c0cda82510c0a1a2531f.mp4",
+    "static/media/masq.png": "/ICANWI/static/media/masq.aabc2111596327fed9f6.png",
+    "static/media/womenGpic.JPG": "/ICANWI/static/media/womenGpic.258495d1516193399649.JPG",
+    "static/media/menGpic.JPG": "/ICANWI/static/media/menGpic.05f784611bb21ac62307.JPG",
+    "static/media/tidy.jpg": "/ICANWI/static/media/tidy.7412c9d99fc6a7163ac8.jpg",
+    "static/media/ladyvid.mp4": "/ICANWI/static/media/ladyvid.7375e9888127bc4b4f0f.mp4",
+    "static/media/imagea.png": "/ICANWI/static/media/imagea.b20ed305730e873bc06a.png",
+    "static/media/franco.jpg": "/ICANWI/static/media/franco.c742270d24d4aaf9c44a.jpg",
+    "static/media/group-photorm1.png": "/ICANWI/static/media/group-photorm1.0e37061418208650e728.png",
+    "static/media/ladiesGrm.png": "/ICANWI/static/media/ladiesGrm.795101ad4103a5f30e41.png",
+    "static/media/ogidi.png": "/ICANWI/static/media/ogidi.2268f19ff6066a607155.png",
+    "static/media/3kidrm.png": "/ICANWI/static/media/3kidrm.544d57dfe3bf7d573a9b.png",
+    "static/media/menG.png": "/ICANWI/static/media/menG.e8c948d8dc1aa31ab5db.png",
+    "static/media/group-photorm2.png": "/ICANWI/static/media/group-photorm2.7320d6fe42ac539f2585.png",
+    "static/media/chuks.png": "/ICANWI/static/media/chuks.dd6798ee20cebcd5212e.png",
+    "static/media/alidiKids.jpg": "/ICANWI/static/media/alidiKids.1c057e977a2b79ea1f2d.jpg",
+    "static/media/logorm.png": "/ICANWI/static/media/logorm.7093a02280826b4fc0a8.png",
+    "static/media/kings.jpeg": "/ICANWI/static/media/kings.645b63ad08db66ed22f6.jpeg",
+    "static/media/pammy.jpg": "/ICANWI/static/media/pammy.27672860d6c71e5fa599.jpg",
+    "static/media/charity.jpg": "/ICANWI/static/media/charity.cc737819334804d25bf5.jpg",
+    "static/media/blacklife.jpg": "/ICANWI/static/media/blacklife.46d1f65f647c7f2fd4a9.jpg",
+    "static/media/ugo.jpg": "/ICANWI/static/media/ugo.eaf7e5744a8c59667f8c.jpg",
+    "static/media/obinna.png": "/ICANWI/static/media/obinna.30725cd52f0ec3c3e6ae.png",
+    "static/media/abacha.jpg": "/ICANWI/static/media/abacha.c9ca4c6e59fa442287e9.jpg",
+    "static/media/nqwobi.jpg": "/ICANWI/static/media/nqwobi.f07f00ab0cf5c4f9898d.jpg",
+    "static/media/ojiOse.jpg": "/ICANWI/static/media/ojiOse.dd43454e833f64b9c854.jpg",
+    "static/media/lightBlue.jfif": "/ICANWI/static/media/lightBlue.0e7813b758e8cd76c772.jfif",
+    "index.html": "/ICANWI/index.html",
+    "main.93362ca1.css.map": "/ICANWI/static/css/main.93362ca1.css.map",
+    "main.cdb66539.js.map": "/ICANWI/static/js/main.cdb66539.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93362ca1.css",
+    "static/js/main.cdb66539.js"
+  ]
+}
