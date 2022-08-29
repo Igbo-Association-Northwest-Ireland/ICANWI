@@ -1,13 +1,6 @@
 import React from 'react'
 import {Card, Row, Col} from 'react-bootstrap'
 import styled from 'styled-components';
-import masq from '../image/masq.png'
-import charity from '../image/charity.jpg'
-import blacklife from '../image/blacklife.jpg'
-import stpatrick from '../image/stpatrick.jpg'
-import stpatrick2 from '../image/stpatrick2.jpg'
-import tidytown from '../image/tidy1.jpg'
-import support from '../image/support.jpg'
 import video1 from '../video/bg-video.mp4'
 
 
@@ -43,18 +36,7 @@ const WhatweDo = () => {
           </Card.Body>
           </Card>
           </COL>
-           {/*  <COL className='col col-Engagment'>
-        <Card  className='cards card-Engagment'>
-          <div variant="top" className='Engagment-img'>
-          </div>
-          <Card.Body className='cards-body'>
-            <Card.Title>Community Engagment</Card.Title>
-            <Card.Text>
-            while the communities have a lot to offer to us but the question begging for answer is what do we have to give back to the community. ICANWI from the inception of its existence has been a devoted part of the community through participation and volunteering
-            </Card.Text>
-          </Card.Body>
-          </Card>
-          </COL> */}
+          
             <COL className='col col-Equality'>
         <Card  className='cards card-Equality'>
           <div variant="top" className='Equality-img'>

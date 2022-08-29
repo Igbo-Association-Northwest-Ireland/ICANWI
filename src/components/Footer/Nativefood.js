@@ -1,10 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import abacha from '../image/abacha.jpg';
-import oji from '../image/ojiOse.jpg';
-import nqwobi from '../image/nqwobi.jpg';
-import pammy from '../image/pammy.jpg';
-import video1 from '../video/bg-video.mp4';
 import {Card, Row, Col, Grid} from 'react-bootstrap';
 
 const Nativefood = () => {
@@ -32,19 +27,21 @@ const Nativefood = () => {
       </Card.Body>
       </Card>
       </COL>
-        <COL className='col col-nqwobi'>
-    <Card  className='cards card-nqwobi'>
-      <div variant="top" className='Nqwobi-img'>
+      <COL className='col col-oji'>
+    <Card  className='cards card-ose'>
+      <div variant="top" className='oji-img'>
       </div>
       <Card.Body className='cards-body'>
-        <Card.Title>Nqwobi</Card.Title>
+        <Card.Title>Oji-Ose</Card.Title>
         <Card.Text>
-        There are some types of dishes that are associated with people's origins. Nqwobi is a good example of that dish as its origin can be traced back to the Igbo tribe__the eastern part of Nigeria. {/* Formerly, bush meats were used to prepare Nqwobi. But nowadays, Nqwobi can be prepared using cow legs, spicy sauces, and herbs such as Utazi-leaf and Nchanwu. The sauce is thickened with a chemical substance called Okanwu, which actually foams up the stew. The instance is traditionally referred to as Igbangu. Nqwobi is considered an antidote to alcohol intoxication, and as such, it is preferablly taken with alcohol.  */}
+        It is impossible to overstate the historical significance and importance of kolanut to the Igbos due to its numerous roles. Among the Igbos, it represents acceptance, cooperation, and solidarity. Guests are usually offered it as a way to make them feel welcome by their hosts.
         </Card.Text>
       </Card.Body>
       </Card>
       </COL>
-        <COL className='col col-abacha'>
+
+
+      <COL className='col col-abacha'>
     <Card  className='cards card-abacha'>
       <div variant="top" className='abacha-img'>
       </div>
@@ -56,14 +53,16 @@ const Nativefood = () => {
       </Card.Body>
       </Card>
       </COL>
-        <COL className='col col-oji'>
-    <Card  className='cards card-ose'>
-      <div variant="top" className='oji-img'>
+
+
+        <COL className='col col-nqwobi'>
+    <Card  className='cards card-nqwobi'>
+      <div variant="top" className='Nqwobi-img'>
       </div>
       <Card.Body className='cards-body'>
-        <Card.Title>Oji-Ose</Card.Title>
+        <Card.Title>Nqwobi</Card.Title>
         <Card.Text>
-        It is impossible to overstate the historical significance and importance of kolanut to the Igbos due to its numerous roles. Among the Igbos, it represents acceptance, cooperation, and solidarity. Guests are usually offered it as a way to make them feel welcome by their hosts.
+        There are some types of dishes that are associated with people's origins. Nqwobi is a good example of that dish as its origin can be traced back to the Igbo tribe__the eastern part of Nigeria. {/* Formerly, bush meats were used to prepare Nqwobi. But nowadays, Nqwobi can be prepared using cow legs, spicy sauces, and herbs such as Utazi-leaf and Nchanwu. The sauce is thickened with a chemical substance called Okanwu, which actually foams up the stew. The instance is traditionally referred to as Igbangu. Nqwobi is considered an antidote to alcohol intoxication, and as such, it is preferablly taken with alcohol.  */}
         </Card.Text>
       </Card.Body>
       </Card>

@@ -5,7 +5,6 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import HeroImage from './components/Body/HeroImage';
 import styled from 'styled-components';
 import Navab from './components/Header/Navab';
-import Activities from './components/Body/Activities';
 import Myteam from './components/Body/Myteam';
 import AboutUs from './components/Body/AboutUs';
 import Videos from './components/Body/Videos';

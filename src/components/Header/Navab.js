@@ -1,9 +1,5 @@
 import React from 'react'
-import logo from '../image/logo2.png'
-import logo1 from '../image/logo.png'
 import logo2 from '../image/logorm.png'
-import light from '../image/lightingbg.jpg'
-import dark from '../image/darkbg.png'
 import Avatar from 'react-avatar';
 import { FaAngleDown, FaChevronDown, FaHome } from "react-icons/fa";
 import {BsChevronCompactDown} from 'react-icons/bs'

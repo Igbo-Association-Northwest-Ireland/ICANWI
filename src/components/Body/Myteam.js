@@ -1,17 +1,12 @@
 import React from 'react'
 import { FiSearch} from "react-icons/fi";
 import {Card, Row, Col, Button, Container} from 'react-bootstrap'
-import francis from '../image/friday.png'
 import Kinsley from '../image/img/kings.jpeg'
 import chuks from '../image/chuks.png'
 import ogidi from '../image/ogidi.png'
-import Djimg from '../image/DJimg.jpg'
-import mypic1 from '../image/mypic1.jpg'
 import franco from '../image/img/franco.jpg'
-import thanks from '../image/thanks1.png'
 import obinna from '../image/img/obinna.png'
 import ugo from '../image/ugo.jpg'
-import logo from '../image/logo.png'
 import styled from 'styled-components'
 
 
