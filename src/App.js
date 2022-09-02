@@ -1,5 +1,6 @@
 
 import  './App.scss';
+import './Header.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import HeroImage from './components/Body/HeroImage';
@@ -43,11 +44,4 @@ height:100vh;
 box-sizing:border-box;
 
 `
-const APPLET = styled.div`
-width:auto;
-height:auto;
-box-sizing:border-box;
-background:#ff00;
 
-
-`

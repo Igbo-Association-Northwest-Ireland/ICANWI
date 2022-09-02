@@ -2,13 +2,13 @@ import React from 'react'
 import {Card, Row, Col} from 'react-bootstrap'
 import styled from 'styled-components';
 import video1 from '../video/bg-video.mp4'
+import { FiSearch} from "react-icons/fi";
 
 
 const WhatweDo = () => {
   return (
     
         <div className=' contcaianer-fluid position mt-3 mb-3 what-we-do-cover'>
-
        <COLHeader className='what-we-do-title container'>
         <h3>What We Do</h3>
         <video autoPlay muted loop>
@@ -22,29 +22,33 @@ const WhatweDo = () => {
         <ROWS>
         <COL className = 'col col-cultural-integration'>
         <Card  className='cards card-integration'>
-          <div variant="top" className='integration-img'>
-          </div>
+          <ARCHOR variant="top" className='integration-img int'>
+          <a href="#" className="btn btn-primary btn-link ">
+          <SearchIcon className='searchIcon'/></a>
+          </ARCHOR>
           <Card.Body className='cards-body'>
             <Card.Title>Cultural Integration</Card.Title>
             <Card.Text>
             Building a community 
-           where everyone lives as brothers and sister 
-    is the integral objective and focus of this group. 
-    We have been committed in achieving unity and
-    peace through cultural diversity and inclusion
+            where everyone lives as brothers and sister 
+             is the integral objective and focus of this group. 
+             We have been committed in achieving unity and
+              peace through cultural diversity and inclusion
             </Card.Text>
           </Card.Body>
           </Card>
           </COL>
           
-            <COL className='col col-Equality'>
+        <COL className='col col-Equality'>
         <Card  className='cards card-Equality'>
-          <div variant="top" className='Equality-img'>
-          </div>
+          <ARCHOR variant="top" className='Equality-img eq'>
+          <a href="#" className="btn btn-primary btn-link ">
+         <SearchIcon className='searchIcon'/></a>
+          </ARCHOR>
           <Card.Body className='cards-body'>
             <Card.Title>Equality and Diversity</Card.Title>
             <Card.Text>
-            Loneliness is a burden but having the sense of walking alone is mentally distressing. Our focus is on building one tent that can accomodate everyone regardless your race or genda. Through cultural diversity and inclusion, we have journed through this path
+            Loneliness is a burden but having the sense of walking alone is mentally distressing. Our focus is on building one tent that can accomodate everyone regardless your race or genda. 
             </Card.Text>
           </Card.Body>
           </Card>
@@ -52,8 +56,10 @@ const WhatweDo = () => {
 
         <COL className='col col-Volunteering'>
         <Card  className='cards card-Volunteering'>
-          <div variant="top" className='Volunteering-img'>
-          </div>
+          <ARCHOR variant="top" className='Volunteering-img'>
+          <a href="#" className="btn btn-primary btn-link ">
+          <SearchIcon className='searchIcon'/></a>
+          </ARCHOR>
           <Card.Body className='cards-body'>
             <Card.Title>Volunteering</Card.Title>
             <Card.Text>
@@ -64,8 +70,10 @@ const WhatweDo = () => {
           </COL>
         <COL className='col col-Charity'>
         <Card  className='cards card-Charity'>
-          <div variant="top" className='Charity-img'>
-          </div>
+          <ARCHOR variant="top" className='Charity-img'>
+          <a href="#" className="btn btn-primary btn-link ">
+          <SearchIcon className='searchIcon'/></a>
+          </ARCHOR>
           <Card.Body className='cards-body'>
             <Card.Title>Charity Activities</Card.Title>
             <Card.Text>
@@ -74,18 +82,7 @@ const WhatweDo = () => {
           </Card.Body>
           </Card>
           </COL>
-        {/* <COL className='col col-Follow up'>
-        <Card  className='cards card-Follow up'>
-          <div variant="top" className='Follow up-img'>
-          </div>
-          <Card.Body className='cards-body'>
-            <Card.Title>Follow up</Card.Title>
-            <Card.Text>
-            We have offered assistance to the community and to people in need through volunteering and participation. However, it has also helped members make friends, learn new skills, and develop their careers
-            </Card.Text>
-          </Card.Body>
-          </Card>
-          </COL> */}
+
           </ROWS>
        </div>
     
@@ -113,22 +110,42 @@ const WhatweDo = () => {
       min-width:100% !important;
      padding:2% !important;
     }
-     
-    /* .col-oji{
-      background:green;
-    }
-    .col-abacha{
-      background:red;
-    }
-    .col-pammy{
-      background:black;
-    }
-    .col-nqwobi{
-      background:gray;
-    } */
+
     }
     `
-     
-    
+
+  const ARCHOR = styled.div`
+  .btn-link{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:50%;
+  top:0;
+  width:100%;
+  height:50%;
+  opacity:0.5;
+  
+    .searchIcon{
+     font-size:1.5rem;
+     color:white;
+     display:block;
+     position:absolute;
+     top:30%;
+     left:45%;
+     transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     visibility:hidden;
+    }
+    :hover .searchIcon{
+      visibility:visible;
+    }
+   
+  }
+  `
+     const SearchIcon = styled(FiSearch)`
+     &:hover{
+     transform:scale(1.8);
+     cursor:pointer;
+     }
+    `
     const COL = styled(Col)`
     `

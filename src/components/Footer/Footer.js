@@ -10,34 +10,34 @@ import { Container, Row, Card, Form, Col, Button } from 'react-bootstrap';
 const Footer = () => {
     return (
         <>
-<FOOTER className="section-6-container pt-12 pb-8 footers
+<FOOTER className="section-6-container py-24 pb-8 footers
  section-container section-container-image-bg mt-12  " 
  id="section-6">
     <div className="container">
         <div className="row">
-            <div className="col section-6 section-description wow fadeIn">
-                <h2 color='#1e154e'>Contact Us</h2>
+            <div className="col section-6 section-description wow fadeIn text-light">
+                <h2 color='#f2f2f2'>Contact Us</h2>
                 <div className="minutes">
                     <div className="aside-1">
                         <div className="divider-1 wow fadeInUp"><span></span></div>
-                        <p color='#1e154e'>
+                        <p color='#f2f2f2'>
                         Send us an email using the form below or follow us on our social media channels.</p>
                     </div>
 
                     <div className="aside2">
-                        <p color='#1e154e'>
+                        <p color='#f2f2f2'>
                         Aready a member, sign in to read the minutes of our meetings</p>
                         <button className="btn btn-customised " 
-                        style={{ border: '2px solid #1e154e',
+                        style={{ border: '1px solid #ECAD7F',
                         borderRadius:'10px', fontWeight:'600',
-                        color:'#1e154e' }}>Sign in | Explore more </button>
+                        color:'white' }}>Sign in | Explore more </button>
                     </div>
                 </div>
             </div>
         </div>
         <div className="row">
     <div className="col-md-6 section-6-box wow ">
-        <h3 className='send-email' color='#1e154e'>By eMail</h3>
+        <h3 className='send-email text-light' color='#f2f2f2'>By eMail</h3>
         <div className="section-6-form">
             <form role="form" className='mb-3'>
             <div className="form-group my-1">
@@ -54,15 +54,12 @@ const Footer = () => {
             </div>
             <button type="submit" 
             className="btn-outline btn-customised mt-2 px-3 py-1 send-message" 
-            style={{ border: '2px solid #1e154e',
-            borderRadius:'10px',
-            color:'#1e154e', fontWeight:'600'
-            }}><i className="bi bi-paper-plane"></i> Send Message</button>
+           ><i className="bi bi-paper-plane"></i> Send Message</button>
         </form>
     </div>
             </div>
             <div className="col-md-5 offset-md-1 section-6-box wow media">
-                <h3 color='#1e154e'>Follow us</h3>
+                <h3 className ='text-light'color='#f2f2f2'>Follow us</h3>
                 <div className="section-6-social">
                 <div class="section-6-social socials">
                     <a href="#"><i class="bi bi-facebook"></i></a>
@@ -87,10 +84,10 @@ const Footer = () => {
               marginBottom: '1rem', 
               borderTop: '1px solid rgba(0, 0, 0, 0.9)' }} 
               /> */}
-                    <div className='text-center p-5' 
-                       style={{ backgroundColor: '#a2a2a1ff', color: '#1e154e',fontWeight:'600' }}>
+                    <div className='text-center pb-4 pt-4 last-footer' 
+                       style={{  }}>
                         DinoTech world web Explorer | &copy;  {new Date().getFullYear()} Copyright:{' '}
-                        <a style={{color:'#1e154e', fontWeight:'600'}} className='text' href='https://friday-udoku.github.io/fabf.io/'>
+                        <a style={{color:'#ECAD7F', fontWeight:'600'}} className='text' href='https://friday-udoku.github.io/fabf.io/'>
                             friday-udoku.github.io
                         </a>
                     </div>
@@ -100,7 +97,7 @@ const Footer = () => {
             </>
 )
 }
-
+/* color: #a2a2a1ff:  */
 export default Footer
 const FORMCONTROL = styled(Form.Control)`
 border: 1px solid gray;
@@ -114,9 +111,10 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
 `
 const FOOTER = styled.div`
 .send-email{padding:1rem 0}
-.send-message{background:#FF7E00!important;
+.send-message{
+background:#ECAD7F!important;
 border:none !important; 
-color:whitesmoke !important;
+color:#1e1245 !important;
 border-radius:5px !important;
 padding: 2% 3% !important}
 margin-top:0!important;

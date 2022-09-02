@@ -20,19 +20,23 @@ const AboutUs = () => {
                 </p>
         <div className="buttons wow px-0" style={{maxWidth:'260px'}}>			
         
-        <a className="reg-btn btn w-auto d-flex " style={{background:'lightgray'}}>
+        <a className="reg-btn btn w-auto d-flex ">
          <span className='reg-button'>Register to join the group</span> <span className='mx-3'><BsFillPencilFill/></span>
         </a>
       </div>
      </div>
 
-          <div className="col-sm-12 col-md-12 right-aside col-lg-4 section-2-box text " style={{width:'45%'}}>
-            <div className="text ">
-              <h5 className="mt d-flex" style={{color:'#1e154e'}}><BsFillHandThumbsUpFill color='red' /><span className='mx-2 envous-culture'>
+          <div className="col-sm-12 col-md-12 right-aside col-lg-4 section-2-box text " 
+          style={{width:'45%'}}>
+            <div className="text p-0 ">
+              <h5 className="mt d-flex" style={{color:'#0000009', fontWeight:'700'}}><BsFillHandThumbsUpFill
+               color='#900C3F ' /><span className='mx-2 envous-culture'>
                 Igbos Enviable Cultural Values</span></h5>
-              <div className="mt-4 culture-envi p-3" style={{ color: 'rgb(248, 245, 245)', background: '#1e154e', width:'100%' }}>
+              <div className="mt-4 culture-envi p-3" 
+               style={{ color: '#f2f2f2', fontWeight:'400',
+                background: '#561d5e', width:'100%' }}>
 
-                <li className="mt-n1 text-light">Special care to visitors</li>
+                <li className="mt-n1 ">Special care to visitors</li>
                 <li className="mt-n1">Children up-bringing - not for parents only</li>
                 <li className="mt-n1">Respect to elders</li>
                 <li className="mt-n1">Mandatory care for old people</li>

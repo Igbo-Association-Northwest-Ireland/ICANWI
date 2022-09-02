@@ -30,13 +30,16 @@ const Videos = () => {
                 <div className="section-5-box-image">
                     
                     <video className="video-fluid z-depth-1 embed-responsive embed-responsive-16by9" autoPlay loop controls muted>
-                    <source src={video1} type="video/mp4" allowfullscreen/>
+                    <source src={video1} type="video/mp4" allowFullScreen/>
                   </video>
                 
                 </div>
                 <h5 className='mt-2 d-flex'><span href="#" color='#1e154e'>Culture and oneself</span><GoTriangleRight className='mt-1'/></h5>
                 <div className="section-5-box-date d-flex "> June 2017 <FaRegCalendarCheck className='mt-1 mx-1'/></div>
-                <p>A man without culture is like a tree without root. Igbos are naturally endoured with diverse culture and tradition most which were created for administration of justice</p>
+                <p>Man without culture is like a tree without roots. 
+                    Igbos are naturally endowed with diverse cultures and traditions, 
+                    most of which were created to administer justice
+                      </p>
             </div>
             <div className="col-md-4 section-5-box wow fadeInDown">
                 <div className="section-5-box-image">
@@ -44,13 +47,15 @@ const Videos = () => {
                     <video className="video-fluid z-depth-1 embed-responsive 
                     embed-responsive-16by9" autoPlay loop controls muted>
                         <source src={video2} type="video/mp4" 
-                    allowfullscreen/>
+                    allowFullScreen/>
                 </video>
                 
                 </div>
                 <h5 className='mt-2 d-flex'><span href="#" color='#1e154e'>Created Memory</span><GoTriangleRight className='mt-1'/></h5>
                 <div className="section-5-box-date d-flex "><i className="far fa-calendar"></i> December 2019 <FaRegCalendarCheck className='mt-1 mx-1'/></div>
-                <p>To empower children to explore their potentials is the ultimate gift crucial to their development</p>
+                <p>Providing children with the opportunity to explore their
+                     potential is the ultimate gift that they need to grow
+                    </p>
             </div>
             <div className="col-md-4 section-5-box wow fadeInUp">
                 <div className="section-5-box-image">
@@ -58,7 +63,7 @@ const Videos = () => {
                     <video className="video-fluid z-depth-1 embed-responsive 
                     embed-responsive-16by9" autoPlay loop controls muted>
                         <source src={video3} type="video/mp4" 
-                    allowfullscreen/>
+                    allowFullScreen/>
                 </video>
 
                 </div>
@@ -67,7 +72,10 @@ const Videos = () => {
                 <i className="far fa-calendar">
                 </i> December 2019 <FaRegCalendarCheck className='mt-1 mx-1'/></div>
                 <p>
-                The world is not fairly divided and life itself dishing out depression and disappiontment at a will. chosen to viewed the world in the manner that perpetuates joy rather than agony is our goal.
+                We live in a world that is unfairly divided,
+                 and life itself dishes out depression and
+                  descouragement at will. Viewing the world in a way
+                   that promotes joy rather than suffering is our goal.
                 </p>
             </div>
         </div>

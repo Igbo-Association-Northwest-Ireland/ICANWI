@@ -26,8 +26,8 @@ const Myteam = () => {
     </Ttitle>
 </Row>
 <Row className='pb-1' style={{minHeight:'300px', maxHeight:'auto'}}>
-<Container mx-auto>
-  <TCardCover className='mx-auto Team'>
+<Container>
+  <TCardCover className='mx-auto=true Team'>
   <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
   <img src={chuks}
   className=' avatar rounded-4xl card-img-top mx-auto relative top-2'/>

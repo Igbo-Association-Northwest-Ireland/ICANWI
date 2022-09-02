@@ -8,8 +8,6 @@ const CarouselVid = () => {
   return (
     
     <div className="carol-2"> 
-
-
     <div className="container pb-3">
 <div className="carousel-example-2 carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
 {/* <!--Indicators-->

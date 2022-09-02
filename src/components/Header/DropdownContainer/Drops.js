@@ -37,9 +37,9 @@ window.addEventListener('scroll', changeBackground)
         src={logo2}
     />
     } */}
-<h2>ICANWI</h2>
+<h2 className='relative'>ICANWI</h2>
 </a>
- <span className='menu row-auto' style={{minWidth:'350px'}}>
+ <span className='menu ' style={{minWidth:'350px'}}>
   <span style={{minWidth:'150px', maxWidth:'350px'}} className='col-auto'>
   <span className='pt-4 menu-text  relative mt-3 '>
     <span className='menus hover:cursor-pointer'  
@@ -111,6 +111,8 @@ window.addEventListener('scroll', changeBackground)
   )
 }
 
+export default Drops
+
 const NAVLINK = styled(Nav.Link)`
     color:#f56038 !important;
     font-size:1.2rem;
@@ -127,7 +129,7 @@ const NAVLINK = styled(Nav.Link)`
     left:7rem !important;
     }
 `
-export default Drops
+
 const CANVAS = styled.div`
 .navbars{
 max-width:480px;
@@ -154,6 +156,10 @@ rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 @media(max-width:992px){
 max-width:600px;
+.menu-text>.menus {
+  box-shadow:none;
+  color:white !important;
+}
 }
 @media only screen and (max-width: 
   550px) and (min-width: 320px) {
@@ -161,6 +167,7 @@ max-width:600px;
   margin:auto !important;
   left:0 !important;
   padding-left:6%;
+  padding-bottom:2% !important;
   }
 
 
@@ -178,6 +185,9 @@ max-width:600px;
   font-weight:600;
 }
 @media(max-width:786px){
+ h2{
+  top:.5rem !important
+ }
   .hambuger{
   visibility:visible !important;
   left:7rem !important;
@@ -204,7 +214,6 @@ max-width: 100vh !important;
 }
 
   }
-
 
 .menu{
 min-width:80px !important;

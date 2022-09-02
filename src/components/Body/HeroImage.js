@@ -19,8 +19,8 @@ const HeroImage = () => {
 
 <div className= "card main-card position-absolute" style={{width: "26rem"}}>
   <div className="card-body hero-card-body relative">
-    <h6 className="card-title text-white mb-0 text-4xl c-h6">  
-      <span className='card-title-span'><span className='welcome-title'>Welcome <span className='To'>to</span></span> <br/>Igbo Cultural Association North-west Ireland</span>
+    <h6 className="card-title text-white">  
+      <span className='card-title-span'><span className='welcome-title'>Welcome <span className='To'>to</span></span> <br/><span className='welcome-title2'>Igbo Cultural</span> Association North-west Ireland</span>
     </h6>
     <p className="card-text card-texts">
       Founded in 2010 with the shared goal of 
@@ -30,7 +30,7 @@ const HeroImage = () => {
     <a href="#" className="btn rounded-lg btn-customised button" 
     >
       Read More
-      </a>
+    </a>
   </div>
   <div className="overlays position-absolute" ></div>
 </div>
@@ -69,11 +69,12 @@ position:relative;
 .main-card{
   background:transparent !important;
   left:2rem;
-  top:5rem !important;
+  top:4.5rem !important;
   font-family: verdana;
   z-index: 10;
   border:none;
-  .card-body{z-index: 5 !important
+  .card-body{z-index: 5 !important;
+
   }
 
   .card-title{
@@ -81,7 +82,7 @@ position:relative;
     font-size:1.5rem;
     font-weight:900;
     font-family: verdana;
-    line-height:2.5rem;
+    line-height:3rem;
     z-index:25;
   }
   .card-texts{
@@ -112,8 +113,12 @@ position:relative;
   background:black;
   opacity:0.1;
   z-index:-1;
-  border-radius: 10% 30% 50% 70% !important;
   border:none;
+  @media(max-width:786px){
+    opacity:0.4;
+    min-width:100vw !important;
+  
+ }
  }
 @media(max-width:1200px){
 margin:0 !important;
@@ -135,6 +140,23 @@ text-align: left !important;
   }
    @media(max-width:786px){
     margin-left:-2rem!important;
+    .card-title{
+    line-height:2.5rem;
+    font-size:1.8rem;   
+     margin-top:-3rem !important;
+    }
+    .welcome-title{
+    display:none !important;    
+    }
+    .welcome-title2{
+      font-size:2.5rem;   
+    }
+    
+    .card-texts{
+      font-size:1.2rem !important;
+    }
+    font-size:1.5rem;
+
     .button{
     padding:5px !important;
     background:#4d1b50;
@@ -149,9 +171,16 @@ text-align: left !important;
    padding:1rem 2rem !important;
 
  .card-texts{
-  padding-right:1.1rem 
+  padding-right:1.5rem 
   !important;
   }
+   }
+   @media(max-width:786px){
+    .card-title-span{
+      max-height:3rem !important;
+      min-height:4rem !important;
+      padding:0 !important;
+    }
    }
   }
 `
