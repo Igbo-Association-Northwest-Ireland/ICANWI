@@ -1,7 +1,7 @@
+
+
 /* header and heroimage media query styling here
  */
- 
-    
     @media only screen and (max-width:992px) and (min-width:800px){
    .hero-image-inner-item img{
     margin-top:8rem;
@@ -86,17 +86,44 @@
   
 
 
-
-
-
-
-
 /*About us media query  starts here*/
+.About{
+    z-index:10;
+    position:relative;
+    box-sizing: border-box;
+    padding: 0 5rem !important;
+    @media(max-width:1000px){
+        padding: 0 3rem !important;
+    }
+    @media(max-width:980px){
+        padding: 0 1rem !important;
+    }
+    @media(max-width:875px){
+.igbo-value,
+.pen,
+.join,
+.must,
+.child,
+.pencil{
+display:none !important;
+}
+    }
+   }  
+   .reg-btn{
+    background:#40336B;
+    color: #f2f2f2;    
+    font-weight: 600;
+    max-width:250px !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0 4% 4%;
+    margin-left: 5%;
+}
+     
 .envous-culture{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    
-
 }
 .reg-btn{
     background:#40336B;
@@ -111,22 +138,61 @@
 .right-aside{
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
-@media(max-width:960px){
+
+@media(max-width:786px){
 .about-us{
 display:flex;
 flex-direction: column;
-padding: 0 2rem;
+justify-content:center;
+align-items:center;
+
+;& :not(.envi-list){
+padding:0 5%;
+} 
 ;& .right-aside, .left-aside{
 min-width:100% !important;
 max-width: 100% !important;
 }
 ;& .title{
- 
     font-weight: 600;
     font-size: 1.7rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.right-aside {
+    margin-top: 4rem !important;
+  }
+
+.envi-list{
+  padding: 5% 1% !important;
+  height:auto; 
+  font-weight:600 !important ;
+  font-size: 1.1rem !important;
+}
+
+.reg-btn{
+    background:#40336B;
+    color: #f2f2f2;    
+    font-weight: 600;
+    max-width:150px !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0;
+    margin-left: 5%;
+}
+.envous-culture{
+    font-weight: 700;
+    font-size:1.3rem !important;
+    min-width:100% !important;
+   /*  position: absolute;  */
+}
+.thumpup{
+    position:absolute;
+    color:white !important;
+    left:50%;
+    opacity:90;
+}
 
 }
 

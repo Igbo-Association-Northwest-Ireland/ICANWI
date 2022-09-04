@@ -156,9 +156,11 @@ rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 @media(max-width:992px){
 max-width:600px;
+padding-bottom:1% !important;
 .menu-text>.menus {
   box-shadow:none;
   color:white !important;
+ 
 }
 }
 @media only screen and (max-width: 

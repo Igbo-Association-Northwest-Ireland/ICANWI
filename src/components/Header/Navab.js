@@ -14,13 +14,16 @@ let logs;
 const Navab = (props) => {
 const Drops = props.Drops
 return (
-<NAVBARS  variant='light' expand='lg' style={{ minWidth: '100vw' }}>
-<CONTAINER fluid className=' overflow-hidden py-2' style={{ paddingLeft: '5rem', paddingRight: '3rem' }}>
+<NAVBARS  variant='light' expand='lg' 
+style={{ minWidth: '100vw' }}>
+<CONTAINER fluid className=' overflow-hidden py-2' 
+style={{ paddingLeft: '5rem', paddingRight: '3rem' }}>
 
 {/* NAVBAR BRAND SECTION STARTS HERE.......
 */}
 
-<BRAND href="#home" className='rounded-circle position-relative brand' >
+<BRAND href="#home" 
+  className='rounded-circle position-relative brand' >
     {<img
         alt="Image" href="#home"
         src={logo2}
@@ -33,7 +36,11 @@ return (
 TOOGLE COMPONENTS SECTION STARTS HERE.......
 
 */}
-     <TOGGLER aria-controls="basic-navbar-nav" style={{border:'none', outline:'none'}}><HAMBURGER style={{border:'none', outline:'none'}}/></TOGGLER> 
+     <TOGGLER aria-controls="basic-navbar-nav" 
+     style={{border:'none', outline:'none'}}>
+        <HAMBURGER 
+        style={{border:'none', outline:'none'}}/>
+        </TOGGLER> 
 
 {/* NAVBAR TOGGLE SECTION STOPS HERE AND .... 
 
@@ -44,9 +51,11 @@ TOOGLE COMPONENTS SECTION STARTS HERE.......
     <Nav className="me-auto">
 {/*         activities dropdown button starts here
  */}        <SPAN className=' spancover'>
-            <a href="#home2" className='navbar-brand'><FaHome className=' spc home ' /></a>
+            <a href="#home2" className='navbar-brand'>
+                <FaHome className=' spc home ' /></a>
             <span className='activities-list-holder position-relative '>
-                <span className=' activities-list'>Explore <span className='explore'>the list of </span> our activities</span>
+                <span className=' activities-list'>Explore 
+                <span className='explore'>the list of </span> our activities</span>
                 <span className='dropdowns position-relative'>{<Drops/>}</span>
             </span>
         </SPAN>

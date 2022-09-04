@@ -21,7 +21,8 @@ import WhatweDo from './components/Body/WhatweDo';
 
 function App() {
   return (
-   <APP className='p-0 m-0 position-relative'>
+  <APP className='p-0 m-0 position-relative'>
+  <HEADS>
    <Drops/>
     <HeroImage/>
     <AboutUs/>
@@ -31,8 +32,8 @@ function App() {
      <Language/>
      <Nativefood/>
      <CarouselVid/>
-    
      <Footer/>
+     </HEADS>
    </APP>
   );
 }
@@ -42,6 +43,21 @@ const APP = styled.div`
 width:100vw;
 height:100vh;
 box-sizing:border-box;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+`
+const HEADS = styled.div`
+position:absolute;
+width:100%;
+height:100%;
+box-sizing:border-box;
+left:0;
+right:0;
+bottom:0;
+top:0;
+
 
 `
 

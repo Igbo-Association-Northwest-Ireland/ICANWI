@@ -84,9 +84,9 @@ const Footer = () => {
               marginBottom: '1rem', 
               borderTop: '1px solid rgba(0, 0, 0, 0.9)' }} 
               /> */}
-                    <div className='text-center pb-4 pt-4 last-footer' 
+                    <div className='text-center  last-footer' 
                        style={{  }}>
-                        DinoTech world web Explorer | &copy;  {new Date().getFullYear()} Copyright:{' '}
+                        DinoTech web Design | &copy;  {new Date().getFullYear()} Copyright:{' '}
                         <a style={{color:'#ECAD7F', fontWeight:'600'}} className='text' href='https://friday-udoku.github.io/fabf.io/'>
                             friday-udoku.github.io
                         </a>

@@ -1,12 +1,8 @@
-html>body{
+html body{
   margin:0;
   padding:0;
   overflow-x: hidden;
-  z-index: -1;
-
 }
-
- 
 /* TEAM SECTION STYLING STARTS HERE
  */
 .team{
@@ -54,14 +50,7 @@ html>body{
   color: #dc0000;
   padding: 10px;
 }
-@media only screen and (max-width: 992px) {
-  #section-1 {
-    transform: translateY(-5%) !important;
-  }
-  .section-2-box {
-    margin-top: 4rem !important;
-  }
-}
+
 .footers{
   background-color: #743B7A !important;
  background: url(../public/images/purple11.jpg)center center/cover no-repeat; 
@@ -72,6 +61,14 @@ html>body{
   color: #ECAD7F;
   font-weight:600; 
   max-height:100px !important;
+  padding:2rem !important;
+  @media(max-width:786px){
+  display:flex;
+  flex-direction:column; 
+  justify-content:center;
+  align-items:center;
+  padding-bottom: 4rem !important;
+  }
   
 }
  /* border: 2px solid #1e154e,
@@ -114,67 +111,4 @@ margin-top: 2rem;
 }
 }
 
- /*   team section stop here  and search links starts
-  .searches{
-  min-width: 18rem;
-  border-bottom: 2px solid rgb(222, 219, 219);
-  border-left: none;
-  border-top: none;
-  border-left: none;
-  outline: none !important;
-  z-index: 50;
-  }
-.butin{
-  border: none;
-  outline: none !important;
-  z-index: 50;
-}
-.butin:hover{
-  box-shadow: none;
-  background-color: transparent;
-}
-.contains {
-  background-color: #0e8dbc;
-  padding: 2rem;
-  z-index: 20;
-  color: #FFFFFF;
-  box-shadow: 0 1px 0 #CCCCCC, 0 1px 0 #c9c9c9,
-   0 1px 1px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2),
-   0 0px 0px rgba(0, 0, 0, .15);
-
-}
-.list{
-  font-size: 1.2rem;
-}
-.butin:hover .list{
-box-shadow: #CCCCCC;
-color: black;
-}
-.searches:focus{
-  outline: none !important;
-  color:rgb(9, 10, 10);
-  font-size: 1.3rem; 
-}
-.offheader {
-  background: #0e8dbc;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-.video-container {
-  height: 100px;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
-}
-
-.video-container video {
-min-width: 100%;
-min-height: 100%;
-position: absolute;
-object-fit: cover;
-z-index: 0;
-
-}
-*/
+ 

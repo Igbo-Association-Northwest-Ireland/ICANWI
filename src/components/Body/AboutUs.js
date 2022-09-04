@@ -6,11 +6,12 @@ import styled from 'styled-components';
 const AboutUs = () => {
   return (
 
-    <div className="section-2-container  mt-5 About relative">
-    <div className="container relative">
+    <div className=" mt-5 About relative container-fluid pt-2">
+    <div className="relative pb-3 pt-3 px-0 min-w-full">
     
-        <div className="row  about-us relative">
-          <div className="col-sm-12 col-md-12 left-aside col-lg-8  " style={{maxWidth:'55%'}}>
+        <div className="row about-us relative">
+          <div className="col-sm-12 col-md-12 left-aside col-lg-8  "
+             style={{maxWidth:'55%'}}>
                 <h3 className='title'>About Us</h3>
                 <p className="medium-paragraph">
                 Igbo cultural Association Northwest Ireland is a cultural organised group founded in 2010 with the shared goal of promoting equality, diversity, peace and unity through cultural integration, community engagement,  participation and volunteering
@@ -18,30 +19,36 @@ const AboutUs = () => {
                 <p>
                   At the heart of our purpose is our commitment to Inclusion and charitable Activites, fostering an inclusive and diverse social environment where everyone has the voice and support to embrace  social life with purpose and respect. Through hard working, self-support and development -we do what we do
                 </p>
-        <div className="buttons wow px-0" style={{maxWidth:'260px'}}>			
+        <div className="buttons wow px-0" 
+        style={{maxWidth:'260px'}}>			
         
         <a className="reg-btn btn w-auto d-flex ">
-         <span className='reg-button'>Register to join the group</span> <span className='mx-3'><BsFillPencilFill/></span>
+         <span className='reg-button'>
+          Register to join <span className='join'>the group</span>
+         </span> 
+         
+         <span className='mx-3 pen'><BsFillPencilFill/>
+         </span>
         </a>
       </div>
      </div>
 
-          <div className="col-sm-12 col-md-12 right-aside col-lg-4 section-2-box text " 
+          <div className="col-sm-12 col-md-12 right-aside col-lg-4 " 
           style={{width:'45%'}}>
             <div className="text p-0 ">
-              <h5 className="mt d-flex" style={{color:'#0000009', fontWeight:'700'}}><BsFillHandThumbsUpFill
+              <h5 className="mt d-flex" style={{color:'#0000009', fontWeight:'700'}}><BsFillHandThumbsUpFill className='thumbup'
                color='#900C3F ' /><span className='mx-2 envous-culture'>
-                Igbos Enviable Cultural Values</span></h5>
-              <div className="mt-4 culture-envi p-3" 
+                <span className='igbo-value'>Igbos Enviable </span>Cultural Values</span></h5>
+              <div className="mt-4 envi-list p-3" 
                style={{ color: '#f2f2f2', fontWeight:'400',
                 background: '#561d5e', width:'100%' }}>
 
-                <li className="mt-n1 ">Special care to visitors</li>
-                <li className="mt-n1">Children up-bringing - not for parents only</li>
-                <li className="mt-n1">Respect to elders</li>
-                <li className="mt-n1">Mandatory care for old people</li>
-                <li className="mt-n1">Compulsory support to new born and mother </li>
-                <li className = "dame"> Mandatory Breast Feeding</li>
+                <li className="mt-n1 en-li">Special care to visitors</li>
+                <li className="mt-n1 en-li">Children up-bringing <span className='child'> {'->' }the community affair</span></li>
+                <li className="mt-n1 en-li">Respect to elders</li>
+                <li className="mt-n1 en-li">Mandatory care for the older people</li>
+                <li className="mt-n1 en-li">New born and mother <span className='must'>support {'->'} Mandatory</span></li>
+                <li className = "dame en-li">Breast Feeding {'->'} Mandatory </li>
               </div>
             </div>
           </div> 

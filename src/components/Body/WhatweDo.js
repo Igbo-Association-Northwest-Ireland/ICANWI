@@ -2,6 +2,7 @@ import React from 'react'
 import {Card, Row, Col} from 'react-bootstrap'
 import styled from 'styled-components';
 import video1 from '../video/bg-video.mp4'
+import video2 from '../video/relay4life.mp4'
 import { FiSearch} from "react-icons/fi";
 
 
@@ -12,7 +13,7 @@ const WhatweDo = () => {
        <COLHeader className='what-we-do-title container'>
         <h3>What We Do</h3>
         <video autoPlay muted loop>
-          <source src={video1} type="video/mp4" muted preload="metadata" loop/>
+          <source src={video2} type="video/mp4" muted preload="metadata" loop/>
           Your browser does not support the video tag.
            </video>
         </COLHeader>

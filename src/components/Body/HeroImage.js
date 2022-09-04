@@ -73,7 +73,8 @@ position:relative;
   font-family: verdana;
   z-index: 10;
   border:none;
-  .card-body{z-index: 5 !important;
+  .card-body{
+    z-index: 5 !important;
 
   }
 
@@ -140,6 +141,7 @@ text-align: left !important;
   }
    @media(max-width:786px){
     margin-left:-2rem!important;
+    top:5.5rem !important;
     .card-title{
     line-height:2.5rem;
     font-size:1.8rem;   
