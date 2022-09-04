@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/ICANWI/static/css/main.4bec3079.css",
-    "main.js": "/ICANWI/static/js/main.9432fb7b.js",
+    "main.css": "/ICANWI/static/css/main.1f95fb3c.css",
+    "main.js": "/ICANWI/static/js/main.10535a5b.js",
     "static/media/bg-video.mp4": "/ICANWI/static/media/bg-video.7625476ee9f620bf5c06.mp4",
     "static/media/kidsdance.mp4": "/ICANWI/static/media/kidsdance.5ba5d25ff72bed21d0b6.mp4",
+    "static/media/relay4life.mp4": "/ICANWI/static/media/relay4life.1ec39e05bf841e05cda9.mp4",
     "static/media/masq-vid.mp4": "/ICANWI/static/media/masq-vid.c0cda82510c0a1a2531f.mp4",
     "static/media/masq.png": "/ICANWI/static/media/masq.aabc2111596327fed9f6.png",
     "static/media/womenGpic.JPG": "/ICANWI/static/media/womenGpic.258495d1516193399649.JPG",
@@ -33,11 +34,11 @@
     "static/media/purple13.jpg": "/ICANWI/static/media/purple13.e65d4ae83bbfffea68bf.jpg",
     "static/media/purple14.jpg": "/ICANWI/static/media/purple14.495c9377a9e7c5d8de55.jpg",
     "index.html": "/ICANWI/index.html",
-    "main.4bec3079.css.map": "/ICANWI/static/css/main.4bec3079.css.map",
-    "main.9432fb7b.js.map": "/ICANWI/static/js/main.9432fb7b.js.map"
+    "main.1f95fb3c.css.map": "/ICANWI/static/css/main.1f95fb3c.css.map",
+    "main.10535a5b.js.map": "/ICANWI/static/js/main.10535a5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bec3079.css",
-    "static/js/main.9432fb7b.js"
+    "static/css/main.1f95fb3c.css",
+    "static/js/main.10535a5b.js"
   ]
 }
