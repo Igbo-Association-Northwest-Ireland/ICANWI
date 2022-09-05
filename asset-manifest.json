@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ICANWI/static/css/main.1f95fb3c.css",
-    "main.js": "/ICANWI/static/js/main.10535a5b.js",
+    "main.css": "/ICANWI/static/css/main.24bf5eba.css",
+    "main.js": "/ICANWI/static/js/main.f4c8726e.js",
     "static/media/bg-video.mp4": "/ICANWI/static/media/bg-video.7625476ee9f620bf5c06.mp4",
     "static/media/kidsdance.mp4": "/ICANWI/static/media/kidsdance.5ba5d25ff72bed21d0b6.mp4",
     "static/media/relay4life.mp4": "/ICANWI/static/media/relay4life.1ec39e05bf841e05cda9.mp4",
@@ -11,6 +11,7 @@
     "static/media/menGpic.JPG": "/ICANWI/static/media/menGpic.05f784611bb21ac62307.JPG",
     "static/media/tidy.jpg": "/ICANWI/static/media/tidy.7412c9d99fc6a7163ac8.jpg",
     "static/media/ladyvid.mp4": "/ICANWI/static/media/ladyvid.7375e9888127bc4b4f0f.mp4",
+    "static/media/bookBG.PNG": "/ICANWI/static/media/bookBG.7d27a25cce9f7abd1b31.PNG",
     "static/media/imagea.png": "/ICANWI/static/media/imagea.b20ed305730e873bc06a.png",
     "static/media/franco.jpg": "/ICANWI/static/media/franco.c742270d24d4aaf9c44a.jpg",
     "static/media/group-photorm1.png": "/ICANWI/static/media/group-photorm1.0e37061418208650e728.png",
@@ -34,11 +35,11 @@
     "static/media/purple13.jpg": "/ICANWI/static/media/purple13.e65d4ae83bbfffea68bf.jpg",
     "static/media/purple14.jpg": "/ICANWI/static/media/purple14.495c9377a9e7c5d8de55.jpg",
     "index.html": "/ICANWI/index.html",
-    "main.1f95fb3c.css.map": "/ICANWI/static/css/main.1f95fb3c.css.map",
-    "main.10535a5b.js.map": "/ICANWI/static/js/main.10535a5b.js.map"
+    "main.24bf5eba.css.map": "/ICANWI/static/css/main.24bf5eba.css.map",
+    "main.f4c8726e.js.map": "/ICANWI/static/js/main.f4c8726e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f95fb3c.css",
-    "static/js/main.10535a5b.js"
+    "static/css/main.24bf5eba.css",
+    "static/js/main.f4c8726e.js"
   ]
 }
