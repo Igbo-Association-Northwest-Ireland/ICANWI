@@ -3,7 +3,7 @@ import {Card, Row, Col} from 'react-bootstrap'
 import styled from 'styled-components';
 import video1 from '../video/bg-video.mp4'
 import video2 from '../video/relay4life.mp4'
-import { FiSearch} from "react-icons/fi";
+import {FiSearch} from "react-icons/fi";
 
 
 const WhatweDo = () => {
@@ -71,13 +71,13 @@ const WhatweDo = () => {
           </COL>
         <COL className='col col-Charity'>
         <Card  className='cards card-Charity'>
-          <ARCHOR variant="top" className='Charity-img'>
-          <a href="#" className="btn btn-primary btn-link ">
-          <SearchIcon className='searchIcon'/></a>
-          </ARCHOR>
-          <Card.Body className='cards-body'>
-            <Card.Title>Charity Activities</Card.Title>
-            <Card.Text>
+        <ARCHOR variant="top" className='Charity-img'>
+        <a href="#" className="btn btn-primary btn-link ">
+        <SearchIcon className='searchIcon'/></a>
+        </ARCHOR>
+        <Card.Body className='cards-body'>
+        <Card.Title>Charity Activities</Card.Title>
+        <Card.Text>
             We have offered assistance to the community and to people in need through volunteering and participation. However, it has also helped members make friends, learn new skills, and develop their careers
             </Card.Text>
           </Card.Body>
@@ -150,3 +150,4 @@ const WhatweDo = () => {
     `
     const COL = styled(Col)`
     `
+/* A culture that values human orientation emphasizes the importance of viewing others humanly; this includes promoting empathy, altruistic behaviors, and harmony among different races, cultures, and religions. */

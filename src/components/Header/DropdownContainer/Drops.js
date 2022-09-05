@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Modals from './Modals'
 
 
 
@@ -60,7 +61,7 @@ window.addEventListener('scroll', changeBackground)
  
 <span className='navbar-links d-flex ' >
  <a href='#' className='nav-link'>Sign-in</a>
-    <a href='#' className='nav-link'>Register</a>
+    <a href='#' className='nav-link'><Modals/></a>
     </span>
  </span>
  

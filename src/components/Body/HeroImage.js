@@ -160,7 +160,8 @@ text-align: left !important;
     font-size:1.5rem;
 
     .button{
-    padding:5px !important;
+      margin-top:1rem !important;
+    padding:12px 14px !important;
     background:#4d1b50;
   }
   left:10% !important;

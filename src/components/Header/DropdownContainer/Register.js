@@ -1,9 +1,25 @@
-import React from 'react'
 
-const Register = () => {
-  return (
+import  react, { useState} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Modal, Button} from 'react-bootstrap';
+import styled from 'styled-components'
+
+
+
+
+
+
+  const Register = () => {
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
+    return (
     <MODAL className="card-body p-4 p-sm-5 P-5 card-registration">
     <h5 className="card-title text-center mb-5 fw-light fs-5">Register</h5>
+
     <form>
         <div className="form-floating mb-3">
             <input type="text" className="form-control" id="floatingInputUsername"
@@ -44,6 +60,8 @@ const Register = () => {
             </button>
         </div>
     </form>
+
+
      
     <div className="modal-footer">
         <button type="button" className="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
@@ -53,3 +71,5 @@ const Register = () => {
 }
 
 export default Register
+
+const MODAL = styled.div``

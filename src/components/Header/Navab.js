@@ -6,6 +6,7 @@ import {BsChevronCompactDown} from 'react-icons/bs'
 import { Navbar, Container, Row, Col, Nav } from 'react-bootstrap'
 import styled from 'styled-components'
 import {BsJustify} from 'react-icons/bs'
+import Modals from './DropdownContainer/Register';
 
 
 
@@ -72,7 +73,7 @@ TOOGLE COMPONENTS SECTION STARTS HERE.......
       </li>
       
       <li className="nav-item">
-        <a className="nav-link  join-us-link" href="#">Join us</a>
+        <a className="nav-link  join-us-link" href="#" onClick={Modals}>Join us</a>
       </li>
         </ul>
    

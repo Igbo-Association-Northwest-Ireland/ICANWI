@@ -1,5 +1,7 @@
 
+import Modals from './components/Header/DropdownContainer/Modals';
 import  './App.scss';
+import  './custom.css';
 import './Header.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
@@ -23,7 +25,7 @@ function App() {
   return (
   <APP className='p-0 m-0 position-relative'>
   <HEADS>
-   <Drops/>
+   <Drops mode={Modals}/>
     <HeroImage/>
     <AboutUs/>
     <WhatweDo/>
@@ -33,6 +35,7 @@ function App() {
      <Nativefood/>
      <CarouselVid/>
      <Footer/>
+     <Modals/>
      </HEADS>
    </APP>
   );
