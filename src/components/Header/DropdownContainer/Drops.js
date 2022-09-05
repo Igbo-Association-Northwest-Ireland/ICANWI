@@ -9,6 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Modals from './Modals'
+import Register from './Register'
 
 
 
@@ -101,7 +102,7 @@ window.addEventListener('scroll', changeBackground)
   boxShadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)',
   boxshadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)'
   }}>
-    Register
+   {<Register/>}
     </button>
 
   </div>

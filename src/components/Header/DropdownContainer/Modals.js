@@ -17,7 +17,7 @@ const Modals = () =>{
           <Modal.Header className="modehead" closeButton>
             <Modal.Title className='modet'>
             
-            <h5 className="card-title text-center mb-5 fw-light fs-5">Register</h5>
+            <h5 className="card-title text-light text-center mb-5 fw-light fs-5">Register</h5>
                 </Modal.Title>
           </Modal.Header>
 
@@ -87,9 +87,6 @@ const Modals = () =>{
               Close
             </Button>
            </div>
-
-           
-           
           </Modal.Footer>
         </Modal>
       </div>

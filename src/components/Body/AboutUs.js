@@ -10,8 +10,10 @@ import Modalex from './Modalex';
 const AboutUs = () => {
   return (
     <div className=" mt-5 About relative container-fluid pt-2">
+
     <div className="relative pb-3 pt-3 px-0 min-w-full">
         <div className="row about-us relative">
+      
           <div className="col-sm-12 col-md-12 left-aside col-lg-8  "
              style={{maxWidth:'55%'}}>
                 <h3 className='title'>About Us</h3>
@@ -21,20 +23,10 @@ const AboutUs = () => {
                 <p>
                   At the heart of our purpose is our commitment to Inclusion and charitable Activites, fostering an inclusive and diverse social environment where everyone has the voice and support to embrace  social life with purpose and respect. Through hard working, self-support and development -we do what we do
                 </p>
-        <div className="buttons wow px-0" 
-        style={{maxWidth:'260px'}}>			
-        <a className="reg-btn btn w-auto d-flex ">
-         <span className='reg-button'>
-          Register to join {<Modalex/>}<span className='join'>
-          the group</span>
-         </span> 
-         <span className='mx-3 pen'>
-          <BsFillPencilFill/>
-         </span>
-        </a>
-      </div>
-     </div>
-      <div className="col-sm-12 col-md-12 right-aside col-lg-4 " 
+                <div className="moll  text-dark">{<Modalex/>}</div> 
+              </div>
+     
+         <div className="col-sm-12 col-md-12 right-aside col-lg-4 " 
           style={{width:'45%'}}>
             <div className="text p-0 ">
               <h5 className="mt d-flex"
@@ -59,12 +51,12 @@ const AboutUs = () => {
           </div> 
           </div>
         </div>
-        <hr className="" 
+  {/*       <hr className="" 
         style={{
         marginTop: '1rem', 
         marginBottom: '1rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.6)'}}
-        />
+        /> */}
     </div>
   )
 }

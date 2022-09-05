@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Modal, Button} from 'react-bootstrap';
+import {BsFillPencilFill, BsFillHandThumbsUpFill} from 'react-icons/bs';
 
 const Modalex = () => {
   
@@ -10,15 +11,27 @@ const Modalex = () => {
     const handleShow = () => setShow(true);
     return (
       <div className="mode">
-        <Button className="nextButton relative bottom-2 pt-2 bg-transparent text-light" onClick={handleShow} style={{ border:'none !important', color:'white !important'}}>
-        <span className='text-light !important'>Register</span>
+        <Button className=" relative reg-btn bg-transparent focus:outline-none shadow-none border-none" 
+         onClick={handleShow}>
+    
+        <span className=" btn-cover w-auto d-flex ">
+         <span className='reg-button'>
+          Register to join <span className='join'>
+          the group</span>
+         </span> 
+         <span className='mx-3 pen'>
+          <BsFillPencilFill/>
+         </span>
+        </span>
+    
         </Button>
   
-        <Modal show={show} onHide={handleClose} centered  className="card-body p-4 modes p-sm-5 P-5 card-registration">
+        <Modal show={show} onHide={handleClose} centered 
+         className="card-body p-4 modes p-sm-5 P-5 card-registration">
           <Modal.Header className="modehead" closeButton>
             <Modal.Title className='modet'>
             
-            <h5 className="card-title text-center mb-5 fw-light fs-5">Register</h5>
+            <h5 className="card-title text-light text-center mb-5 fw-light fs-5">Register</h5>
                 </Modal.Title>
           </Modal.Header>
 

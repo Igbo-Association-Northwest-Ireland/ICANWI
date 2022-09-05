@@ -109,15 +109,54 @@ display:none !important;
     }
    }  
    .reg-btn{
-    background:#40336B;
-    color: #f2f2f2;    
+    background:#ccc !important;
+    color: #40336B;
     font-weight: 600;
-    max-width:250px !important;
+    max-width:300px !important;
     display:flex;
     align-items: center;
     justify-content: center;
-    padding: 4% 0 4% 4%;
-    margin-left: 5%;
+    padding: 1% 0 1% 2%;
+   border:none !important;
+   outline:none !important;
+   & :hover{
+    color: #40336B;
+    border:none !important;
+    box-shadow: none !important;
+   } 
+& :focus{
+    outline:none !important;
+    box-shadow: none !important;
+    border:none !important
+}
+.close:focus, .close:hover {
+    outline: none;
+    cursor: pointer;
+ }
+  
+    
+}
+
+.reg2-btn{
+    
+  padding: 1% 0 1% 2%;
+   border:none !important;
+   outline:none !important;
+   & :hover{
+    border:none !important;
+    box-shadow: none !important;
+   } 
+& :focus{
+    outline:none !important;
+    box-shadow: none !important;
+    border:none !important
+}
+.close:focus, .close:hover {
+    outline: none;
+    cursor: pointer;
+ }
+  
+    
 }
      
 .culture-title{
