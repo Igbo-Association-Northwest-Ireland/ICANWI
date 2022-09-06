@@ -35,7 +35,7 @@ function App() {
      <Nativefood/>
      <CarouselVid/>
      <Footer/>
-     <Modals/>
+
      </HEADS>
    </APP>
   );

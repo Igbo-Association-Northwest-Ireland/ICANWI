@@ -28,7 +28,7 @@ window.addEventListener('scroll', changeBackground)
 
 
   return (
-    <div className={dropdownCover? 'dropdownCover active' : 'dropdownCover'}>
+  <div className={dropdownCover? 'dropdownCover active' : 'dropdownCover'}>
 
 <CANVAS className="container-fluid relative   text-light  py-5 pb-10 canvass">
 
@@ -42,7 +42,8 @@ window.addEventListener('scroll', changeBackground)
 <h2 className='relative'>ICANWI</h2>
 </a>
  <span className='menu ' style={{minWidth:'350px'}}>
-  <span style={{minWidth:'150px', maxWidth:'350px'}} className='col-auto'>
+  <span style={{minWidth:'150px', maxWidth:'350px'}}
+  className='col-auto'>
   <span className='pt-4 menu-text  relative mt-3 '>
     <span className='menus hover:cursor-pointer'  
      data-bs-toggle="offcanvas" data-bs-target="#demo" >MENU</span>
@@ -68,10 +69,13 @@ window.addEventListener('scroll', changeBackground)
  
  </span>
 </div>
-<div className="offcanvas offcanvas-start offcanvas-cover  " id="demo">
+<div className="offcanvas offcanvas-start offcanvas-cover  "
+ id="demo">
   <div className="offcanvas-header">
   <h3 className="offcanvas-title">ICANWI</h3>
-  <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  <button type="button" 
+  className="btn-close btn-close-white" 
+  data-bs-dismiss="offcanvas"></button>
   </div>
   <div className="offcanvas-body">
   <Nav className="me-auto d-flex flex-col">
@@ -83,7 +87,8 @@ window.addEventListener('scroll', changeBackground)
   <NAVLINK href="#link"><span className='span'>Acheivement</span></NAVLINK>
   </Nav>
   </div>
-  <div className='buttons relative bottom-40 left-24 d-flex  flex-column justify-evenly' style={{maxWidth:'10rem'}}>
+  <div className='buttons relative bottom-40 left-24 d-flex  flex-column justify-evenly' 
+  style={{maxWidth:'10rem'}}>
 
   <button type="button" className="btn  btn-customised"  style={{
   color:'#2948429 !important', 
@@ -94,17 +99,9 @@ window.addEventListener('scroll', changeBackground)
    boxshadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)'
    }}>
   Sign-in
-  </button>
-  <button type="button" className="btn btn-customised my-3" style={{color:'white', background: '#2948429', 
-  border:'3px solid #ccc',
-  borderRadius:'15px',
-
-  boxShadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)',
-  boxshadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)'
-  }}>
-   {<Register/>}
-    </button>
-
+ </button>
+   <Register className="" />
+  
   </div>
  
 </div>

@@ -20,7 +20,8 @@ import styled from 'styled-components'
   
      
       <div className="mode">
-        <Button className=" reg2-btn relative bg-transparent focus:outline-none shadow-none" 
+        <Button className=" btn reg2-btn relative btn-customised my-3
+          bg-transparent focus:outline-none shadow-none" 
          onClick={handleShow}>
           Register 
         </Button>

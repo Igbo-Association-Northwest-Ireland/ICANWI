@@ -11,19 +11,21 @@ const AboutUs = () => {
   return (
     <div className=" mt-5 About relative container-fluid pt-2">
 
-    <div className="relative pb-3 pt-3 px-0 min-w-full">
+    <div className=" relative pb-3 pt-3 px-0 min-w-full">
         <div className="row about-us relative">
       
           <div className="col-sm-12 col-md-12 left-aside col-lg-8  "
              style={{maxWidth:'55%'}}>
                 <h3 className='title'>About Us</h3>
                 <p className="medium-paragraph">
-                Igbo cultural Association Northwest Ireland is a cultural organised group founded in 2010 with the shared goal of promoting equality, diversity, peace and unity through cultural integration, community engagement,  participation and volunteering
+                The Igbo Cultural Association Northwest Ireland was founded in 2010 with a mission to promote peace, diversity, equality, and unity through cultural integration and community involvement.
                 </p>
                 <p>
-                  At the heart of our purpose is our commitment to Inclusion and charitable Activites, fostering an inclusive and diverse social environment where everyone has the voice and support to embrace  social life with purpose and respect. Through hard working, self-support and development -we do what we do
+                  
+The core of our mission is to foster an environment of inclusion and diversity where everyone has the opportunity to be heard, supported, and respected. Though the journey has never been easy. We' have made mistakes but none has ever been regretted; instead, We've learned from them. Through hard work, teamwork, and our members' support, we have reached this point 
+
                 </p>
-                <div className="moll  text-dark">{<Modalex/>}</div> 
+                <div className="moll ">{<Modalex/>}</div> 
               </div>
      
          <div className="col-sm-12 col-md-12 right-aside col-lg-4 " 
@@ -43,7 +45,7 @@ const AboutUs = () => {
                 <li className="mt-n1 en-li">Special care to visitors</li>
                 <li className="mt-n1 en-li">Children up-bringing <span className ='child'> {'->'}the community affair</span></li>
                 <li className="mt-n1 en-li">Respect to elders</li>
-                <li className="mt-n1 en-li">Mandatory care for the older people</li>
+                <li className="mt-n1 en-li">Old peoples support {'->'} Mandatory</li>
                 <li className="mt-n1 en-li">New born and mother <span className='must'>support {'->'} Mandatory</span></li>
                 <li className = "dame en-li">Breast Feeding {'->'} Mandatory </li>
               </div>
@@ -51,12 +53,12 @@ const AboutUs = () => {
           </div> 
           </div>
         </div>
-  {/*       <hr className="" 
+  {    <hr className="horrizontal" 
         style={{
         marginTop: '1rem', 
         marginBottom: '1rem', 
         borderTop: '1px solid rgba(0, 0, 0, 0.6)'}}
-        /> */}
+        />}
     </div>
   )
 }

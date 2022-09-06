@@ -141,7 +141,7 @@ justify-content:center;
 align-content:center;
 border:none !important;
 box-shadow:none !important;
-@media(max-width:960px){
+@media(max-width:1230px){
   grid-template-columns:repeat(3, auto);
 }
 @media(max-width:760px){
