@@ -99,6 +99,10 @@
         padding: 0 1rem !important;
     }
     @media(max-width:875px){
+        .horrizontal{
+            display:none !important;
+          }
+           
 .igbo-value,
 .join,
 .must,
@@ -141,7 +145,8 @@ display:none !important;
 @media(max-width:786px){
     min-width: 200px;
     font-weight: 600;
-    padding: 1.5% 0 1.5%  0% !important;
+    color:#000009 !important;
+    padding: 3% 0 3%  0% !important;
     display: block;
     margin-left: -1rem;
    & .pen{position: absolute;
@@ -191,10 +196,7 @@ outline:none !important;
 }
 
 @media(max-width:786px){
-  .horrizontal{
-    display:none !important;
-  }
-    
+  
 .about-us{
 display:flex;
 flex-direction: column;

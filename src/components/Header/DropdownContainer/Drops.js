@@ -82,7 +82,7 @@ window.addEventListener('scroll', changeBackground)
   <NAVLINK href="#home"><span className='span'>Home</span></NAVLINK>
   <NAVLINK href="#link"><span className='span'>Gallary</span></NAVLINK>
   <NAVLINK href="#home"><span className='span'>Videos</span></NAVLINK>
-  <NAVLINK href="#link"><span className='span'>Meeting Minutes</span></NAVLINK>
+  <NAVLINK href="#link"><span className='span'>Minutes</span></NAVLINK>
   <NAVLINK href="#home"><span className='span'>Activities</span></NAVLINK>
   <NAVLINK href="#link"><span className='span'>Acheivement</span></NAVLINK>
   </Nav>
@@ -90,7 +90,7 @@ window.addEventListener('scroll', changeBackground)
   <div className='buttons relative bottom-40 left-24 d-flex  flex-column justify-evenly' 
   style={{maxWidth:'10rem'}}>
 
-  <button type="button" className="btn  btn-customised"  style={{
+  <button type="button" className="btn  btn-customised buttonx"  style={{
   color:'#2948429 !important', 
   background: '#fff001',
   border:'3px solid #000',
@@ -100,7 +100,7 @@ window.addEventListener('scroll', changeBackground)
    }}>
   Sign-in
  </button>
-   <Register className="" />
+   <span className='REG'><Register className="" /></span>
   
   </div>
  
@@ -118,14 +118,18 @@ const NAVLINK = styled(Nav.Link)`
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:700;
     border-bottom: 1px solid #ccc;
+    padding-bottom:3rem !important;
     display:inline-block;
     position: relative;
     min-height:40px;
     span{
     position:absolute;
-    top:.8rem !important;
-    height:80px !important;
+    top:1.6rem !important;
+  
     left:7rem !important;
+    @media(max-width:786px){
+      font-size:1.5rem !important;
+    }
     }
 `
 
@@ -187,7 +191,10 @@ padding-bottom:1% !important;
 }
 @media(max-width:786px){
  h2{
-  top:.5rem !important
+  top:.5rem !important;
+ }
+ h3{
+  font-size:2.5rem !important;
  }
   .hambuger{
   visibility:visible !important;
@@ -198,6 +205,7 @@ padding-bottom:1% !important;
 }
 min-width:100vw !important;
 max-width: 100vh !important;
+
 }
 
 @media only screen and (max-width: 
