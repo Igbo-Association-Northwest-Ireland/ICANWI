@@ -37,7 +37,7 @@ The core of our mission is to foster an environment of inclusion and diversity w
                 color='#900C3F'/>
                <span className='mx-2 culture-title'>
                 <span className='igbo-value'>Igbos Enviable 
-                </span>Cultural Values</span></h5>
+                </span>Our Cultural Values</span></h5>
                <div className="mt-4 envi-list p-3" 
                style={{ color: '#f2f2f2', fontWeight:'400',
                background: '#561d5e', width:'100%' }}>
