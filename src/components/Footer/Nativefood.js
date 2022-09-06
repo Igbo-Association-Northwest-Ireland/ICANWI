@@ -37,7 +37,7 @@ return description.map(descript=>descript)
       <div variant="top" className='pammy-img'>
       </div>
       <Card.Body className='cards-body'>
-        <Card.Title>Pammy</Card.Title>
+        <Card.Title>Palm Wine</Card.Title>
         <Card.Text>
          <>{`${desc()[0].pammy.slice(0, 125)}.....`}<span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
          </>
@@ -82,7 +82,7 @@ return description.map(descript=>descript)
       <div variant="top" className='Nqwobi-img'>
       </div>
       <Card.Body className='cards-body'>
-        <Card.Title>Nqwobi</Card.Title>
+        <Card.Title>Nkwobi</Card.Title>
         <Card.Text className='title'>
       
         <>{`${desc()[3].Nqwobi.slice(0, 162)}....`}<span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
