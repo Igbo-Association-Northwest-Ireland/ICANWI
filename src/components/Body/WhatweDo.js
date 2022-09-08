@@ -31,7 +31,7 @@ const WhatweDo = () => {
           <Card.Body className='cards-body'>
             <Card.Title>Cultural Integration</Card.Title>
             <Card.Text>
-            While eople are interested in participating in a wider society, they would also like to retain and express their heritage culture. Through cultural integration, this association has been committed to providing individuals with the opportunities to model their heritage culture and experience a higher quality of life within the community 
+            While people are interested in participating in a wider society, they would also like to retain and express their heritage culture. Through cultural integration, this association has been committed to providing individuals with the opportunities to model their heritage culture and experience a higher quality of life within the community 
 
 
 <span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
