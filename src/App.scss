@@ -17,6 +17,10 @@ html body{
   background:#ECAD7F;
   background:url(../public/images/purple7.jpg)center/cover no-repeat;
   padding-bottom: 2%;
+  @media(max-width:786px){
+    padding-top:0 !important;
+    margin-top:-7rem!important;
+  }
     ;& h4, p{ 
      color:#ECAD7F !important;
      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);

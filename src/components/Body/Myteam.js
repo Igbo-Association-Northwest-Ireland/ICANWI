@@ -127,8 +127,7 @@ const TEAM = styled.div`
   padding-bottom:10%
 }
 
-`
-
+` 
 const Ttitle = styled(Col)`
 display:flex;
 flex-direction:column;
@@ -147,10 +146,10 @@ transform:translateY(-20%)
   padding: 3rem 0 3rem 0;
 
 .paragraph{max-width: 500px;
-padding: 1rem 1.4rem 1rem 1.4rem;
+ padding: 1rem 1.4rem 1rem 1.4rem;
  margin:auto; 
  font-size: 1rem;
-transform:translateY(-20%)
+ transform:translateY(-20%)
   }
 }
 `
