@@ -1,9 +1,10 @@
 import React from 'react'
-import {Card, Row, Col} from 'react-bootstrap'
+import {Card, Row, Col, Button} from 'react-bootstrap'
 import styled from 'styled-components';
 import video1 from '../video/bg-video.mp4'
 import video2 from '../video/relay4life.mp4'
 import {FiSearch} from "react-icons/fi";
+
 
 
 const WhatweDo = () => {
@@ -20,21 +21,20 @@ const WhatweDo = () => {
         
 
 
-        <ROWS>
+        <ROWS className='what-we-do-content'>
         <COL className = 'col col-cultural-integration'>
         <Card  className='cards card-integration'>
-          <ARCHOR variant="top" className='integration-img int'>
+          <div variant="top" className='integration-img int'>
           <a href="#" className="btn btn-primary btn-link ">
-          <SearchIcon className='searchIcon'/></a>
-          </ARCHOR>
+          <span className='span'/></a>
+          </div>
           <Card.Body className='cards-body'>
             <Card.Title>Cultural Integration</Card.Title>
             <Card.Text>
-            Building a community 
-            where everyone lives as brothers and sister 
-             is the integral objective and focus of this group. 
-             We have been committed in achieving unity and
-              peace through cultural diversity and inclusion
+            While eople are interested in participating in a wider society, they would also like to retain and express their heritage culture. Through cultural integration, this association has been committed to providing individuals with the opportunities to model their heritage culture and experience a higher quality of life within the community 
+
+
+<span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
             </Card.Text>
           </Card.Body>
           </Card>
@@ -42,14 +42,14 @@ const WhatweDo = () => {
           
         <COL className='col col-Equality'>
         <Card  className='cards card-Equality'>
-          <ARCHOR variant="top" className='Equality-img eq'>
+          <div variant="top" className='Equality-img eq'>
           <a href="#" className="btn btn-primary btn-link ">
-         <SearchIcon className='searchIcon'/></a>
-          </ARCHOR>
+         <span className='span'/></a>
+          </div>
           <Card.Body className='cards-body'>
             <Card.Title>Equality and Diversity</Card.Title>
             <Card.Text>
-            Loneliness is a burden but having the sense of walking alone is mentally distressing. Our focus is on building one tent that can accomodate everyone regardless your race or genda. 
+            It is important to view others humanely in a culture that values humane orientations. As a group, we understood how lonely people can feel, as well as how emotionally stressful it can be to feel that you are alone. Our goal has been to promote altruistic behavior, and harmony between different races.  <span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
             </Card.Text>
           </Card.Body>
           </Card>
@@ -57,28 +57,28 @@ const WhatweDo = () => {
 
         <COL className='col col-Volunteering'>
         <Card  className='cards card-Volunteering'>
-          <ARCHOR variant="top" className='Volunteering-img'>
+          <div variant="top" className='Volunteering-img'>
           <a href="#" className="btn btn-primary btn-link ">
-          <SearchIcon className='searchIcon'/></a>
-          </ARCHOR>
+          <span className='span'/></a>
+          </div>
           <Card.Body className='cards-body'>
             <Card.Title>Volunteering</Card.Title>
             <Card.Text>
-            We have offered assistance to the community and to people in need through volunteering and participation. However, it has also helped members make friends, learn new skills, and develop their careers
+            We have freely donated our time to the benefit of our community and other organizations. Also made significant contributions to the development of social conditions in the North-West region. On the other hand, it has been extremely beneficial to the group in terms of expanding our network and giving us a sense of purpose and belonging.  <span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
             </Card.Text>
           </Card.Body>
           </Card>
           </COL>
         <COL className='col col-Charity'>
         <Card  className='cards card-Charity'>
-        <ARCHOR variant="top" className='Charity-img'>
+        <div variant="top" className='Charity-img'>
         <a href="#" className="btn btn-primary btn-link ">
-        <SearchIcon className='searchIcon'/></a>
-        </ARCHOR>
+        <span className='span'/></a>
+        </div>
         <Card.Body className='cards-body'>
         <Card.Title>Charity Activities</Card.Title>
         <Card.Text>
-            We have offered assistance to the community and to people in need through volunteering and participation. However, it has also helped members make friends, learn new skills, and develop their careers
+             As a charitable organization, it is our moral duty to help others when we can. Accordingly, We have offered assistance to the community and to people in need through giving. However, We have benefited not only by feeling more content and fulfilled, but by making new friends, learning various skills, and growing professionally.<span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
             </Card.Text>
           </Card.Body>
           </Card>
@@ -115,7 +115,7 @@ const WhatweDo = () => {
     }
     `
 
-  const ARCHOR = styled.div`
+/*   const div = styled.div`
   .btn-link{
   position:absolute;
   left:0;
@@ -126,7 +126,7 @@ const WhatweDo = () => {
   height:50%;
   opacity:0.5;
   
-    .searchIcon{
+    .span{
      font-size:1.5rem;
      color:white;
      display:block;
@@ -147,7 +147,7 @@ const WhatweDo = () => {
      transform:scale(1.8);
      cursor:pointer;
      }
-    `
+    ` */
     const COL = styled(Col)`
     `
 /* A culture that values human orientation emphasizes the importance of viewing others humanly; this includes promoting empathy, altruistic behaviors, and harmony among different races, cultures, and religions. */

@@ -5,7 +5,7 @@ let Kolanut, pammy, Abacha,Nqwobi;
 
 const description=[
   {
-    pammy:'Pammy is an alcoholic Nigerian side beverage that plays an essential role in traditional activities in Igbo lands. Similarly to Kolanut, it is used for rituals and traditional marriage ceremonies'
+    pammy:'Palm wine is an alcoholic Nigerian side beverage that plays an essential role in traditional activities in Igbo lands. Similarly to Kolanut, it is used for rituals and traditional marriage ceremonies'
   },
   {
 Kolanut:"Kolanut which is also known as Oji in Igbo land is historical significant and the instances cannot be overstated due to its numerous roles. it represents acceptance, cooperation, and solidarity. Guests are usually offered it as a way to make them feel welcome by their hosts."
@@ -14,7 +14,7 @@ Kolanut:"Kolanut which is also known as Oji in Igbo land is historical significa
 Abacha:' Abacha, commonly known as African salad is a dish made from cassava but what makes it unique is the ingredients used during the preparation. A typical Abacha meal is best prepared with a variety of dried fishes but heres a complete version of the Abacha with all the possible ingredients'
 },
 {
-Nqwobi:'There are some types of dishes that are associated with peoples origins. Nqwobi is a good example as its origin can be traced back to the Igbo tribe the eastern part of Nigeria. Formerly, bush meats were used to prepare Nqwobi. But nowadays, Nqwobi can be prepared using cow legs, spicy sauces, and herbs such as Utazi-leaf and Nchanwu. The sauce is thickened with a chemical substance called Okanwu, which actually foams up the stew. The instance is traditionally referred to as Igbangu. Nqwobi is considered an antidote to alcohol intoxication, and as such, it is preferablly taken with alcohol' 
+Nqwobi:'There are some types of dishes that are associated with peoples origins. Nkwobi is a good example as its origin can be traced back to the Igbo tribe the eastern part of Nigeria. Formerly, bush meats were used to prepare Nqwobi. But nowadays, Nqwobi can be prepared using cow legs, spicy sauces, and herbs such as Utazi-leaf and Nchanwu. The sauce is thickened with a chemical substance called Okanwu, which actually foams up the stew. The instance is traditionally referred to as Igbangu. Nqwobi is considered an antidote to alcohol intoxication, and as such, it is preferablly taken with alcohol' 
 
 }
 ]
@@ -39,7 +39,10 @@ return description.map(descript=>descript)
       <Card.Body className='cards-body'>
         <Card.Title>Palm Wine</Card.Title>
         <Card.Text>
-         <>{`${desc()[0].pammy.slice(0, 125)}.....`}<span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
+         <>{`${desc()[0].pammy.slice(0, 125)}.....`}
+         <span>
+          <Button className='btn-sm text-primary bg-transparent border-0' >
+          Read more</Button></span>
          </>
         </Card.Text>
       </Card.Body>
@@ -53,7 +56,10 @@ return description.map(descript=>descript)
       <Card.Body className='cards-body'>
         <Card.Title>Kolanut</Card.Title>
         <Card.Text>
-        <>{`${desc()[1].Kolanut.slice(0, 140)}....`}<span><Button className='btn-sm text-primary bg-transparent border-0' >Read more</Button></span>
+        <>{`${desc()[1].Kolanut.slice(0, 140)}....`}<span>
+          <Button className='btn-sm text-primary bg-transparent border-0' >
+            
+            Read more</Button></span>
         </>
         </Card.Text>
       </Card.Body>

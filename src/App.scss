@@ -5,12 +5,18 @@ html body{
 }
 /* TEAM SECTION STYLING STARTS HERE
  */
+ .team-card-row{
+  min-height:300px;
+  max-height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
 .team{
   background:#ECAD7F;
   background:url(../public/images/purple7.jpg)center/cover no-repeat;
   padding-bottom: 2%;
-/*   box-shadow: 0 0 10px 5px;
- */  
     ;& h4, p{ 
      color:#ECAD7F !important;
      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -23,12 +29,12 @@ html body{
   text-align: center !important;
   color:#ECAD7F;
   font-weight: 700;
-  ;
 
   &:not(p) {
     position: relative;
     top: 8%
   }
+ 
 }
  
 .searchIcon{
@@ -39,8 +45,25 @@ html body{
     visibility: visible;
   }
 }
-
-
+.team-card-row .card-image .austine,
+.chuks,
+.ogidi,
+.franco,
+.kingsley,
+.ugo{
+  min-width:100% !important;
+  min-height:100% !important;
+  object-fit:fill;
+  object-position:center;
+}
+@media(max-width:786px){
+  .austine{
+   object-position:-2px -95px !important;
+  }
+  .ugo{
+   object-position:-2px -35px !important;
+  }
+}
 /* Styling Footer content */
 
 .video-container .caption {

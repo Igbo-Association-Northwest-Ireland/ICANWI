@@ -1,11 +1,11 @@
 import React from 'react'
 import { FiSearch} from "react-icons/fi";
 import {Card, Row, Col, Button, Container} from 'react-bootstrap'
-import Kinsley from '../image/img/kings.jpeg'
+import Kinsley from '../image/img/kings5.jpeg'
 import chuks from '../image/chuks.png'
 import ogidi from '../image/ogidi.png'
 import franco from '../image/img/franco.jpg'
-import obinna from '../image/img/obinna.png'
+import obinna from '../image/img/austine.jpeg'
 import ugo from '../image/ugo.jpg'
 import styled from 'styled-components'
 
@@ -25,23 +25,28 @@ const Myteam = () => {
     </p>
     </Ttitle>
 </Row>
-<Row className='pb-1' style={{minHeight:'300px', maxHeight:'auto'}}>
+<Row className='py-16 team-card-row'>
 <Container>
-  <TCardCover className='mx-auto=true Team'>
-  <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
-  <img src={chuks}
-  className=' avatar rounded-4xl card-img-top mx-auto relative top-2'/>
+  <TCardCover className='Team'>
+
+  <TCard className="card position-relative" >
+ <div className ='card-image'> 
+ <img src={ogidi}
+  className='rounded-4xl ogidi card-img-top'/>
+  </div>
   <div className="card-body">
-    <h5 className="card-title T-title ">Chuks Ogujawa</h5>
-    <p className="card-text team-position">Treasurer</p>
-    <a href="#" className="btn btn-primary btn-link ">
-    <SearchIcon className='searchIcon'/></a>
+    <h5 className="card-title T-title">Charles Obodoechina</h5>
+    <p className="card-text team-position">Chairman</p>
+     <a href="#" className="btn btn-primary btn-link ">
+      <SearchIcon className='searchIcon'/></a>
   </div>
 </TCard>
-  <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
-  < img src={Kinsley}
-   className='avatar rounded-4xl card-img-top mx-auto relative top-2'
-    />
+
+<TCard className="card position-relative">
+<div className ='card-image'> 
+ <img src={Kinsley}
+  className='rounded-4xl kingsley card-img-top'/>
+  </div>
   <div className="card-body">
     <h5 className="card-title T-title top-1">Kingsley Agoha</h5>
     <p className="card-text team-position">Vc. Chairman</p>
@@ -49,39 +54,13 @@ const Myteam = () => {
       <SearchIcon className='searchIcon'/></a>
   </div>
 </TCard>
-  <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
-  < img src={ogidi}
-  className=' avatar rounded-4xl  card-img-top mx-auto relative top-2' />
-  <div className="card-body">
-    <h5 className="card-title T-title">Ogidi</h5>
-    <p className="card-text team-position">Chairman</p>
-     <a href="#" className="btn btn-primary btn-link ">
-      <SearchIcon className='searchIcon'/></a>
+
+<TCard className="card position-relative">
+<div className ='card-image'> 
+ <img src={franco}
+  className='rounded-4xl franco  card-img-top'/>
   </div>
-</TCard>
-  <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
-  < img src={obinna}
-  className='avatar rounded-4xl  card-img-top mx-auto relative top-2' />
-  <div className="card-body">
-    <h5 className="card-title T-title">Austine Okeagu</h5>
-    <p className="card-text team-position">Provost</p>
-     <a href="#" className="btn btn-primary btn-link ">
-      <SearchIcon className='searchIcon'/></a>
-  </div>
-</TCard>
-  <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
-  < img src={ugo}
-   className='avatar rounded-4xl card-img-top mx-auto relative top-2' />
-  <div className="card-body">
-    <h5 className="card-title T-title">Ugo Nwankwo</h5>
-    <p className="card-text team-position">Finacial Secretary</p>
-     <a href="#" className="btn btn-primary btn-link ">
-    <SearchIcon className='searchIcon'/></a>
-  </div>
-  </TCard >
-  <TCard className="card position-relative" style={{width: "12rem", minHeight:'12rem'}}>
-  < img src={franco}
-  className=' avatar rounded-4xl  card-img-top mx-auto relative top-2' />
+
   <div className="card-body">
     <h5 className="card-title T-title">Francis Udoku</h5>
     <p className="card-text team-position">Secretary</p>
@@ -89,6 +68,48 @@ const Myteam = () => {
       <SearchIcon className='searchIcon'/></a>
   </div>
   </TCard >
+
+  <TCard className="card position-relative">
+  <div className ='card-image'> 
+ <img src={ugo}
+  className='rounded-4xl ugo card-img-top'/>
+  </div>
+  <div className="card-body">
+    <h5 className="card-title T-title">Ugo Nwankwo</h5>
+    <p className="card-text team-position">Financial Secretary</p>
+     <a href="#" className="btn btn-primary btn-link ">
+    <SearchIcon className='searchIcon'/></a>
+  </div>
+  </TCard >
+
+
+  <TCard className="card position-relative">
+  <div className ='card-image'> 
+ <img src={chuks}
+  className='rounded-4xl chuks card-img-top'/>
+  </div>
+  <div className="card-body">
+    <h5 className="card-title T-title ">Chuks Ogujawa</h5>
+    <p className="card-text team-position">Treasurer</p>
+    <a href="#" className="btn btn-primary btn-link ">
+    <SearchIcon className='searchIcon'/></a>
+  </div>
+</TCard>
+
+  <TCard className="card relative">
+  <div className ='card-image '> 
+ <img src={obinna}
+  className='rounded-4xl austine card-img-top'/>
+  </div>
+  <div className="card-body">
+    <h5 className="card-title T-title">Austine Okeagu</h5>
+    <p className="card-text team-position">Provost</p>
+     <a href="#" className="btn btn-primary btn-link ">
+      <SearchIcon className='searchIcon'/></a>
+  </div>
+</TCard>
+
+
      </TCardCover>
     </Container>
   </Row>
@@ -112,7 +133,7 @@ const Ttitle = styled(Col)`
 display:flex;
 flex-direction:column;
 justify-content: center;
-align-items:middle;
+align-items:center;
 text-align: center;
 padding: 3rem 0 2rem 0;
 color:#ffffff;
@@ -141,13 +162,85 @@ justify-content:center;
 align-content:center;
 border:none !important;
 box-shadow:none !important;
+
 @media(max-width:1230px){
   grid-template-columns:repeat(3, auto);
 }
-@media(max-width:760px){
+@media(max-width:786px){
   grid-template-columns:repeat(1, auto);
 }
 
+`
+const TCard = styled.div`
+box-sizing :border-box;
+max-height:20rem;
+min-width:13rem;
+max-width:13rem;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:2%;
+border:none !important;
+background:transparent !important;
+position:relative;
+
+
+
+.card-image{
+min-height:16rem !important;
+max-height:16rem !important;
+min-width:100%;
+overflow:hidden;
+opacity: 1;
+}
+a{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+  
+   }
+   .card-body{
+      min-height:4rem !important; 
+      max-height:4rem !important; 
+      min-width:100%;
+      background:transparent !important;
+ 
+    }
+
+   @media(max-width:786px){
+    min-width:20rem;
+    min-height:24rem !important;
+
+   .card-body, .card-image, img{
+    min-width:20rem !important;
+   }
+    .card-image{
+     min-height:18rem !important;
+     max-height:18rem;
+     img{min-height:18rem !important}
+    }
+    .card-body{
+      min-height:6rem !important;
+      max-height:6rem !important;
+     
+    }
+   }
+    
+   
+   
+    h5, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1e154e;
+    font-weight: 600; 
+  
+    }
+ 
+    
 `
 
 const SearchIcon = styled(FiSearch)`
@@ -162,66 +255,3 @@ transform:scale(1.5)
 }
 
 `
-const TCard = styled.div`
-box-sizing :border-box;
-max-height:20rem;
-margin:2%;
-border:none !important;
-background: none !important;
-
-img{
-/* box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
- */min-height:12rem !important;
-   max-height:12rem !important;
-   opacity: 1;
-  
-}
-a{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  top:0;
-  width:100%;
-  height:100%;
-  opacity:0.5;
-   }
-   @media(max-width:760px){
-    width:18rem !important;
-    min-height:22rem !important;
-    max-height:22rem !important;
-    overflow:hidden;
-
-    a{
-  left:0;
-  right:0;
-  bottom:0;
-  top:-16rem;
-  min-width:18rem;
-  min-height:15rem;
-  opacity:0.1;
-   }
-    .card-body{
-      min-height:25% !important; 
-      max-height:25% !important; 
-      min-width:100%;
-      position:absolute;
-      top:75%;
-      left:0
-    }
-    img{
-      min-width:100% !important;
-      min-height:70% !important; 
-      max-height:70% !important; 
-      position:absolute;
-    }
-    h5, p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #1e154e;
-    font-weight: 600; 
-  
-    }
- 
-    }
-`
-
