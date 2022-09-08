@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ICANWI/static/css/main.80df6938.css",
-    "main.js": "/ICANWI/static/js/main.f4ac3639.js",
+    "main.css": "/ICANWI/static/css/main.050fa0f1.css",
+    "main.js": "/ICANWI/static/js/main.563bb156.js",
     "static/media/bg-video.mp4": "/ICANWI/static/media/bg-video.7625476ee9f620bf5c06.mp4",
     "static/media/kidsdance.mp4": "/ICANWI/static/media/kidsdance.5ba5d25ff72bed21d0b6.mp4",
     "static/media/relay4life.mp4": "/ICANWI/static/media/relay4life.1ec39e05bf841e05cda9.mp4",
@@ -22,24 +22,24 @@
     "static/media/group-photorm2.png": "/ICANWI/static/media/group-photorm2.7320d6fe42ac539f2585.png",
     "static/media/chuks.png": "/ICANWI/static/media/chuks.dd6798ee20cebcd5212e.png",
     "static/media/alidiKids.jpg": "/ICANWI/static/media/alidiKids.1c057e977a2b79ea1f2d.jpg",
+    "static/media/austine.jpeg": "/ICANWI/static/media/austine.dce817d46bf3ee949c32.jpeg",
+    "static/media/kings5.jpeg": "/ICANWI/static/media/kings5.1a75ede00754fbe24826.jpeg",
     "static/media/logorm.png": "/ICANWI/static/media/logorm.7093a02280826b4fc0a8.png",
-    "static/media/kings.jpeg": "/ICANWI/static/media/kings.645b63ad08db66ed22f6.jpeg",
     "static/media/pammy.jpg": "/ICANWI/static/media/pammy.27672860d6c71e5fa599.jpg",
     "static/media/charity.jpg": "/ICANWI/static/media/charity.cc737819334804d25bf5.jpg",
     "static/media/blacklife.jpg": "/ICANWI/static/media/blacklife.46d1f65f647c7f2fd4a9.jpg",
     "static/media/ugo.jpg": "/ICANWI/static/media/ugo.eaf7e5744a8c59667f8c.jpg",
-    "static/media/obinna.png": "/ICANWI/static/media/obinna.30725cd52f0ec3c3e6ae.png",
     "static/media/abacha.jpg": "/ICANWI/static/media/abacha.c9ca4c6e59fa442287e9.jpg",
     "static/media/nqwobi.jpg": "/ICANWI/static/media/nqwobi.f07f00ab0cf5c4f9898d.jpg",
     "static/media/ojiOse.jpg": "/ICANWI/static/media/ojiOse.dd43454e833f64b9c854.jpg",
     "static/media/purple13.jpg": "/ICANWI/static/media/purple13.e65d4ae83bbfffea68bf.jpg",
     "static/media/purple14.jpg": "/ICANWI/static/media/purple14.495c9377a9e7c5d8de55.jpg",
     "index.html": "/ICANWI/index.html",
-    "main.80df6938.css.map": "/ICANWI/static/css/main.80df6938.css.map",
-    "main.f4ac3639.js.map": "/ICANWI/static/js/main.f4ac3639.js.map"
+    "main.050fa0f1.css.map": "/ICANWI/static/css/main.050fa0f1.css.map",
+    "main.563bb156.js.map": "/ICANWI/static/js/main.563bb156.js.map"
   },
   "entrypoints": [
-    "static/css/main.80df6938.css",
-    "static/js/main.f4ac3639.js"
+    "static/css/main.050fa0f1.css",
+    "static/js/main.563bb156.js"
   ]
 }
