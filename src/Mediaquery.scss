@@ -92,13 +92,25 @@
     position:relative;
     box-sizing: border-box;
     padding: 0 5rem !important;
+    .our{visibility: hidden !important;}
+    .CV{margin-left:-2rem !important;}
+
     @media(max-width:1000px){
         padding: 0 3rem !important;
     }
-    @media(max-width:980px){
-        padding: 0 1rem !important;
+    @media(max-width:1012px){
+        padding: 0 2rem !important;
+      
     }
-    @media(max-width:875px){
+    @media(max-width:980px){
+        padding: 0 !important;
+        & .left-aside{
+            padding-left:3% !important;
+        
+        }
+
+    }
+    @media(max-width:879px){
         .horrizontal{
             display:none !important;
           }
@@ -152,6 +164,7 @@ display:none !important;
    & .pen{position: absolute;
         margin-left:8rem !important
     } 
+    
 }   
 }
 
@@ -196,13 +209,14 @@ outline:none !important;
 }
 
 @media(max-width:786px){
-  
+   
 .about-us{
 display:flex;
 flex-direction: column;
 justify-content:center;
 align-items:center;
-
+.our{visibility: visible !important;}
+.CV{margin-left:-3.8rem !important;}
 ;& :not(.envi-list){
 padding:0 5%;
 } 
@@ -210,10 +224,7 @@ padding:0 5%;
 min-width:100% !important;
 max-width: 100% !important;
 }
-& .left-aside{
-    padding-left:0 !important;
 
-}
 ;& .title{
     font-weight: 600;
     font-size: 1.7rem;
@@ -231,8 +242,6 @@ max-width: 100% !important;
   font-size: 1.1rem !important;
 }
 
-
-
 .culture-title{
     font-weight: 700;
     font-size:1.3rem !important;
@@ -245,7 +254,16 @@ max-width: 100% !important;
 
 }
 
-}/*What we Do  media query  starts here*/
+}
+@media(max-width:600px){
+    .CV{position: relative;
+        left:1.5rem !important;
+
+}
+}
+
+
+/*What we Do  media query  starts here*/
 .jumbo1{background:#fafafb;
 
 }
