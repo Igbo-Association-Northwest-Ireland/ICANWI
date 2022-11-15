@@ -17,10 +17,10 @@ const AboutUs = () => {
           <div className="col-sm-12 col-md-12 left-aside col-lg-8  "
              style={{maxWidth:'55%'}}>
                 <h3 className='title'>About Us</h3>
-                <p className="medium-paragraph">
+                <p className="medium-paragraph page">
                 The Igbo Cultural Association Northwest Ireland was founded in 2010 with a mission to promote peace, diversity, equality, and unity through cultural integration and community involvement.
                 </p>
-                <p>
+                <p className="medium-paragraph page">
                   
 The core of our mission is to foster an environment of inclusion and diversity where everyone has the opportunity to be heard, supported, and respected. Though the journey has never been easy. We' have made mistakes but none has ever been regretted; instead, We've learned from them. Through hard work, teamwork, and our members' support, we have reached this point 
 

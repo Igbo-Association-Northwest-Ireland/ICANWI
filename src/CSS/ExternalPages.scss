@@ -1,0 +1,156 @@
+
+/* Sidebar Nav pages starts here*/
+.header{
+    @media(max-width:992px){
+        text-align: left !important;
+        h2{
+            font-size: 1.3rem !important;
+        }
+    }
+}
+       .Columns{
+        position:relative;
+        margin-top:12%;
+        overflow: hidden;
+        left:2%;
+        height:auto;
+
+
+        @media(max-width:992px){
+            top: 0 !important;
+            padding-left: 3rem !important;
+            padding-bottom: 3rem !important;
+            .button-page{
+            left:0 !important
+            }
+        }
+
+        @media(max-width:786px){
+            padding-right:3rem !important;
+           
+        }
+
+      }
+
+/*Sign In Pages Start Here*/
+.sign-input{
+    border-top:none !important;
+    border-right:none !important;
+    border-left:none !important;
+    border-radius: none !important;
+    box-shadow:none !important;
+    border-bottom:2px solid slategray !important
+
+}
+.gradient-custom-2 {
+ 
+    background: #fccb90;
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+
+    .Auth-btn{
+        display:grid;
+        grid-template-columns: repeat(2, auto);
+        gap:5%;
+    }
+    .logout-btn{
+        background: transparent !important;
+        border: 0px solid !important;  
+      
+
+       }
+          .register{
+            position:relative;
+            left :25% !important;
+            bottom:15%;
+           
+          }
+        
+          .span-log{
+            font-size: 1.2rem;
+            font-weight: 800;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: url('../components/image/color-mix1.jpg');
+            
+          }  
+      /* Constitution PAGE */
+      .constitution{
+       background:rgb(18, 10, 10) !important;
+       font-size:  1.5rem !important;
+       margin-top:-1rem;
+      }
+      .constution{
+        background-color: #5c1010  !important;
+        outline:none !important;
+        border: none !important;
+      }
+   .constitution-table{
+    max-height:900px !important;
+
+    }
+.page-header{
+display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.constitution-table, .febmeeting2022  ul li
+ {
+    font-size: 14px;
+    list-style-type: square;
+ }
+ .li-circle{list-style-type:circle !important;}
+ .li-alpha{list-style-type:lower-alpha !important;}
+ .li-number{list-style-type: numeral}
+ @media(max-width:992px){
+ .horrizontal-4{
+    margin-top:80rem !important;
+    margin-bottom: 3rem !important;
+    
+ }
+ .horrizontal-5{
+    margin-top:8rem !important;
+    margin-bottom: 3rem !important;
+ }
+ .horrizontal-6{
+    margin-top:18rem !important;
+    margin-bottom: 3rem !important;
+ }
+ .horrizontal-9{
+    margin-top:30rem !important;
+    margin-bottom: 3rem !important;
+ }
+ .horrizontal-11{
+    margin-top:10rem !important;
+    margin-bottom: 3rem !important;
+ }
+ .horrizontal-13{
+    margin-top:58rem !important;
+    margin-bottom: 3rem !important;
+ }
+ .horrizontal-15{
+    margin-top:25rem !important;
+    margin-bottom: 3rem !important;
+ }
+}
+ /*Minutes Page Here*/
+ td, th {
+    border: 1px solid rgb(61, 61, 61) !important;
+    padding: 0 0.5rem;
+    text-align: center !important;
+  }

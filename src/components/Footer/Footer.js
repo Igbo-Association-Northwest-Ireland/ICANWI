@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
 import { FaFacebook, FaTwitterSquare, FaLinkedin, FaInstagramSquare, FaGooglePlusSquare, FaGithub, FaWhatsappSquare } from "react-icons/fa";
 import {BsYoutube } from "react-icons/bs";
@@ -8,6 +8,18 @@ import {BsYoutube } from "react-icons/bs";
 import { Container, Row, Card, Form, Col, Button } from 'react-bootstrap';
 
 const Footer = () => {
+    let navigate = useNavigate();
+    const signOn = () => {
+        navigate('/SignIn') 
+    }
+    const refreshPage = () => {
+        window.reload(false);
+    }
+    const reloaded = () => {
+       signOn();
+       refreshPage()
+    }
+    
     return (
         <>
 <FOOTER className="section-6-container py-24 pb-8 footers
@@ -30,7 +42,7 @@ const Footer = () => {
                         <button className="btn btn-customised " 
                         style={{ border: '1px solid #ECAD7F',
                         borderRadius:'10px', fontWeight:'600',
-                        color:'white' }}>Sign in | Explore more </button>
+                        color:'white' }} onClick={reloaded} target={'_blanc'}>Sign in | Explore more </button>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 
-import  react, { useState} from "react";
+import   {react, useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Modal, Button} from 'react-bootstrap';
 import styled from 'styled-components'
@@ -17,8 +17,7 @@ import styled from 'styled-components'
 
 
     return (
-  
-     
+<>
       <div className="mode">
         <Button className=" btn reg2-btn relative btn-customised my-3
           bg-transparent focus:outline-none shadow-none" 
@@ -105,6 +104,7 @@ import styled from 'styled-components'
           </Modal.Footer>
         </Modal>
       </div>
+      </>
   )
 }
 

@@ -9,8 +9,11 @@ const Modals = () =>{
     const handleShow = () => setShow(true);
     return (
       <div className="mode">
-        <Button className="nextButton relative bottom-2 pt-2 bg-transparent text-light" onClick={handleShow} style={{ border:'none !important', color:'white !important'}}>
-        <span className='text-light !important'>Register</span>
+        <Button className=
+        "nextButton relative bottom-2 pt-2 bg-transparent outline-none shadow-none text-light"
+         onClick={handleShow} 
+         style={{ border:'none !important', color:'white !important'}}>
+        <span className='span-log '>Register</span>
         </Button>
   
         <Modal show={show} onHide={handleClose} centered  className="card-body p-4 modes p-sm-5 P-5 card-registration">
